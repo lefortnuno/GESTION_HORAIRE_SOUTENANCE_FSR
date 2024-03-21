@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(isset($_POST['edit'])){
-		$users = simplexml_load_file('../files/members.xml');
+		$users = simplexml_load_file('../files/xml/members.xml');
 		foreach($users->user as $user){
 			if($user->id == $_POST['id']){
 				$user->firstname = $_POST['firstname'];
@@ -11,7 +11,7 @@
 			}
 		}
  
-		file_put_contents('../files/members.xml', $users->asXML());
+		file_put_contents('../files/xml/members.xml', $users->asXML());
 		$_SESSION['message'] = 'Modification réussi';
 		header('location: ../index.php');
 	}

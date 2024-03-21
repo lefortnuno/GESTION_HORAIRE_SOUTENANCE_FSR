@@ -2,7 +2,7 @@
 	session_start();
 	if(isset($_POST['add'])){
 		//open xml file
-		$users = simplexml_load_file('../files/members.xml');
+		$users = simplexml_load_file('../files/xml/members.xml');
 		$user = $users->addChild('user');
 		$user->addChild('id', $_POST['id']);
 		$user->addChild('firstname', $_POST['firstname']);
@@ -15,7 +15,7 @@
 		$dom->preserveWhiteSpace = false;
 		$dom->formatOutput = true;
 		$dom->loadXML($users->asXML());
-		$dom->save('../files/members.xml');
+		$dom->save('../files/xml/members.xml');
 		// Prettify / Format XML and save
  
 		$_SESSION['message'] = 'Ajout réussi';
