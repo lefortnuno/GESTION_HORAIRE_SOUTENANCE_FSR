@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<users>
+  <user>
+    <id>Et-1</id>
+    <firstname>LEFORT</firstname>
+    <lastname>N.Nuno</lastname>
+    <address>Bettana-Sal&#xE9;</address>
+  </user>
+  <user>
+    <id>Et-2</id>
+    <firstname>TROFEL</firstname>
+    <lastname>N.Nono</lastname>
+    <address>Madagascar</address>
+  </user>
+  <user>
+    <id>Et-3</id>
+    <firstname>SUN</firstname>
+    <lastname/>
+    <address>Paris 47</address>
+  </user>
+</users>
