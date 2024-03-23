@@ -30,7 +30,7 @@ if (!empty ($_SESSION["id"])) {
     ?>
 
     <div class="container">
-        <!-- <h1 class="page-header text-center">ETUDIANT EN DOCTORAT</h1> -->
+        <!-- <h1 class="page-header text-cEntrez votre">ETUDIANT EN DOCTORAT</h1> -->
         <div class="row">
             <!-- <div class="col-lg-12 col-lg-offset-2">  -->
             <div class="">
@@ -39,7 +39,7 @@ if (!empty ($_SESSION["id"])) {
                 // session_start();
                 if (isset ($_SESSION['message'])) {
                     ?>
-                    <div class="alert alert-success text-center" style="margin-top:20px;">
+                    <div class="alert alert-success text-cEntrez votre" style="margin-top:20px;">
                         <?php echo $_SESSION['message']; ?>
                     </div>
                     <?php
@@ -49,7 +49,7 @@ if (!empty ($_SESSION["id"])) {
 
                 if (isset ($_SESSION['errorMessage'])) {
                     ?>
-                    <div class="alert alert-danger text-center" style="margin-top:20px;">
+                    <div class="alert alert-danger text-cEntrez votre" style="margin-top:20px;">
                         <?php echo $_SESSION['errorMessage']; ?>
                     </div>
                     <?php
@@ -62,7 +62,9 @@ if (!empty ($_SESSION["id"])) {
                 <div class="containerForm">
                     <header>Validation</header>
 
-                    <form method="POST" action="crud/crudPHP/edit.php" autocomplete="off">
+                    <form method="POST"
+                        action="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/crud/crudPHP/edit.php"
+                        autocomplete="off">
                         <div class="form first">
                             <div class="details personal">
                                 <span class="title"> Détails personnels</span>
@@ -70,25 +72,26 @@ if (!empty ($_SESSION["id"])) {
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Code Apogée </label>
-                                        <input type="number" placeholder="Enter ID type" name="codeApogee"
-                                            id="codeApogee" value="<?php echo $row['id']; ?>">
+                                        <input type="number" placeholder="Entrez votre Code Apogée" name="codeApogee"
+                                            id="codeApogee" value="<?php echo $row['id']; ?>" readonly
+                                            style="background-color:rgba(13, 0, 0, 0.2);">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Nom </label>
-                                        <input type="text" placeholder="Enter your name" name="nom" id="nom"
+                                        <input type="text" placeholder="Entrez votre nom" name="nom" id="nom"
                                             value="<?php echo $row['nom']; ?>">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Prénom</label>
-                                        <input type="text" placeholder="Enter your email" name="prenom" id="prenom"
+                                        <input type="text" placeholder="Entrez votre prénom" name="prenom" id="prenom"
                                             value="<?php echo $row['prenom']; ?>">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Date de naissance </label>
-                                        <input type="date" placeholder="Enter birth date" name="datenaiss"
+                                        <input type="date" placeholder="Entrez votre date de naissance" name="datenaiss"
                                             id="datenaiss" value="">
                                     </div>
 
@@ -103,19 +106,19 @@ if (!empty ($_SESSION["id"])) {
 
                                     <div class="input-field">
                                         <label>Téléphone </label>
-                                        <input type="number" placeholder="Enter mobile number" name="numTel" id="numTel"
-                                            value="">
+                                        <input type="number" placeholder="Entrez votre numéro de téléphone"
+                                            name="numTel" id="numTel" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Adresse </label>
-                                        <input type="text" placeholder="Enter your ccupation" name="adresse"
+                                        <input type="text" placeholder="Entrez votre adresse" name="adresse"
                                             id="adresse" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Email </label>
-                                        <input type="email" placeholder="Enter ID number" name="email" id="email"
+                                        <input type="email" placeholder="Entrez votre email" name="email" id="email"
                                             value="<?php echo $row['email']; ?>">
                                     </div>
                                 </div>
@@ -127,14 +130,14 @@ if (!empty ($_SESSION["id"])) {
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Titre </label>
-                                        <input type="text" placeholder="Enter issued authority" name="titre" id="titre"
+                                        <input type="text" placeholder="Saisissez le titre" name="titre" id="titre"
                                             value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Thème </label>
                                         <select name="theme" id="theme" value="">
-                                            <option disabled selected>Choisir de Théme</option>
+                                            <option disabled selected>Choix du Théme</option>
                                             <option>T1</option>
                                             <option>T2</option>
                                             <option>T3</option>
@@ -145,20 +148,20 @@ if (!empty ($_SESSION["id"])) {
 
                                     <div class="input-field">
                                         <label>Abstract </label>
-                                        <input type="text" placeholder="Enter issued state" name="abstract"
+                                        <input type="text" placeholder="Saisissez l'abstract" name="abstract"
                                             id="abstract" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Mot clé </label>
-                                        <input type="text" placeholder="Enter your issued date" name="keywords"
+                                        <input type="text" placeholder="Saisissez le mot clé" name="keywords"
                                             id="keywords" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Disciplines </label>
                                         <select name="disciplines" id="disciplines" value="">
-                                            <option disabled selected>Choisir l'institution</option>
+                                            <option disabled selected>Choix de l'institution</option>
                                             <option>Math</option>
                                             <option>Info</option>
                                             <option>Bio</option>
@@ -170,14 +173,14 @@ if (!empty ($_SESSION["id"])) {
 
                                     <div class="input-field">
                                         <label>Specialité </label>
-                                        <input type="text" placeholder="Enter expiry date" name="specialite"
+                                        <input type="text" placeholder="Saisissez votre Specialité" name="specialite"
                                             id="specialite" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Institution </label>
                                         <select name="institution" id="institution" value="">
-                                            <option disabled selected>Choisir l'institution</option>
+                                            <option disabled selected>Choix de l'institution</option>
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -188,7 +191,7 @@ if (!empty ($_SESSION["id"])) {
 
                                     <div class="input-field">
                                         <label>Structure</label>
-                                        <input type="text" placeholder="Enter mobile number" name="structure"
+                                        <input type="text" placeholder="Saisissez votre Structure" name="structure"
                                             id="structure" value="">
                                     </div>
                                 </div>
@@ -200,25 +203,25 @@ if (!empty ($_SESSION["id"])) {
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Nom </label>
-                                        <input type="text" placeholder="Enter your name" name="nomSup" id="nomSup"
+                                        <input type="text" placeholder="Nom du superviseur" name="nomSup" id="nomSup"
                                             value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Prénom</label>
-                                        <input type="text" placeholder="Enter your email" name="prenomSup"
+                                        <input type="text" placeholder="Prénom du superviseur" name="prenomSup"
                                             id="prenomSup" value="">
                                     </div>
                                     <div class="input-field">
                                         <label>Email </label>
-                                        <input type="email" placeholder="Enter ID number" name="emailSup" id="emailSup"
-                                            value="">
+                                        <input type="email" placeholder="Email du superviseur" name="emailSup"
+                                            id="emailSup" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Institution </label>
                                         <select name="institutionSup" id="institutionSup" value="">
-                                            <option disabled selected>Choisir l'institution</option>
+                                            <option disabled selected>Institution du superviseur</option>
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -235,25 +238,25 @@ if (!empty ($_SESSION["id"])) {
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Nom </label>
-                                        <input type="text" placeholder="Enter your name" name="nomCoSup" id="nomCoSup"
-                                            value="">
+                                        <input type="text" placeholder="Nom du co-superviseur" name="nomCoSup"
+                                            id="nomCoSup" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Prénom</label>
-                                        <input type="text" placeholder="Enter your email" name="prenomCoSup"
+                                        <input type="text" placeholder="Prénom du co-superviseur" name="prenomCoSup"
                                             id="prenomCoSup" value="">
                                     </div>
                                     <div class="input-field">
                                         <label>Email </label>
-                                        <input type="email" placeholder="Enter ID number" name="emailCoSup"
+                                        <input type="email" placeholder="Email du co-superviseur" name="emailCoSup"
                                             id="emailCoSup" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Institution </label>
                                         <select name="instititionCoSup" id="instititionCoSup" value="">
-                                            <option disabled selected>Choisir l'institution</option>
+                                            <option disabled selected>Institutiondu co-superviseur</option>
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -269,7 +272,7 @@ if (!empty ($_SESSION["id"])) {
                                         <span class="btnText">Annuler</span>
                                     </div>
 
-                                    <button class="sumbit btn btn-success backBtn2">
+                                    <button type="submit" name="edit" class="sumbit btn btn-success backBtn2">
                                         <span class="btnText">Enregistrer</span>
                                         <i class="uil uil-navigator"></i>
                                     </button>
