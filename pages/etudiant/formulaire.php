@@ -62,7 +62,7 @@ if (!empty ($_SESSION["id"])) {
                 <div class="containerForm">
                     <header>Validation</header>
 
-                    <form action="#">
+                    <form method="POST" action="crud/crudPHP/edit.php" autocomplete="off">
                         <div class="form first">
                             <div class="details personal">
                                 <span class="title"> Détails personnels</span>
@@ -71,18 +71,19 @@ if (!empty ($_SESSION["id"])) {
                                     <div class="input-field">
                                         <label>Code Apogée </label>
                                         <input type="number" placeholder="Enter ID type" name="codeApogee"
-                                            id="codeApogee" value="">
+                                            id="codeApogee" value="<?php echo $row['id']; ?>">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Nom </label>
-                                        <input type="text" placeholder="Enter your name" name="nom" id="nom" value="">
+                                        <input type="text" placeholder="Enter your name" name="nom" id="nom"
+                                            value="<?php echo $row['nom']; ?>">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Prénom</label>
                                         <input type="text" placeholder="Enter your email" name="prenom" id="prenom"
-                                            value="">
+                                            value="<?php echo $row['prenom']; ?>">
                                     </div>
 
                                     <div class="input-field">
@@ -115,7 +116,7 @@ if (!empty ($_SESSION["id"])) {
                                     <div class="input-field">
                                         <label>Email </label>
                                         <input type="email" placeholder="Enter ID number" name="email" id="email"
-                                            value="">
+                                            value="<?php echo $row['email']; ?>">
                                     </div>
                                 </div>
                             </div>
