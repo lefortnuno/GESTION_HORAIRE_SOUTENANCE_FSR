@@ -47,13 +47,13 @@ if (isset ($_POST["submit"])) {
     <div class="box">
         <form class="container" action="" method="post" autocomplete="off">
             <div class="top-header">
-                <span>Email Institutionnel</span>
+                <span>Code Apogée</span>
                 <header>Session d'Authentification</header>
             </div>
 
             <div class="input-field">
-                <input type="email" name="email" id="email" required value="" class="input"
-                    placeholder="Email Institutionnel" required />
+                <input type="email" name="email" id="email" required value="" class="input" placeholder="Code Apogée"
+                    required />
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-field">
@@ -68,7 +68,7 @@ if (isset ($_POST["submit"])) {
             <div class="bottom">
                 <div class="left">
                     <label>
-                        <a href="codeApogee.php">Par Code Apogée</a></label>
+                        <a href="login.php">Par Email Institutionnel</a></label>
                 </div>
 
                 <div class="right">
@@ -78,20 +78,6 @@ if (isset ($_POST["submit"])) {
         </form>
     </div>
     </div>
-
-    <!-- <h2>S'authentifier</h2>
-    <form action="" class="" method="post" autocomplete="off">
-        <label for="email"> Adresse electronique : </label>
-        <input type="email" name="email" id="email" required value="">
-
-        <label for="mdp"> Mot de passe : </label>
-        <input type="password" name="mdp" id="mdp" required value="">
-
-        <button type="submit" name="submit">S'authentifier</button>
-    </form>
-
-    <br />
-    <a href="registration.php">S'enregistrer</a> -->
 </body>
 
 </html>
