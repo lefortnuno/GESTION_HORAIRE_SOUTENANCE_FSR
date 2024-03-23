@@ -3,7 +3,7 @@ session_start();
 if (isset ($_POST['edit'])) {
 	$users = simplexml_load_file('../../files/xml/members.xml');
 	foreach ($users->user as $user) {
-		if ($user->id == $_POST['id']) {
+		if ($user->codeApogee == $_POST['codeApogee']) {
 			$user->firstname = $_POST['firstname'];
 			$user->lastname = $_POST['lastname'];
 			$user->address = $_POST['address'];

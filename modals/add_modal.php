@@ -13,7 +13,7 @@
 					<form method="POST" action="crud/crudXML/add.php">
 						<div class="row form-group">
 							<div class="col-sm-2">
-								<label class="control-label" style="position:relative; top:7px;">ID:</label>
+								<label class="control-label" style="position:relative; top:7px;">Code Apogée:</label>
 							</div>
 							<div class="col-sm-10">
 								<input type="text" class="form-control" name="id">

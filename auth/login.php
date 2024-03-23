@@ -1,7 +1,7 @@
 <?php
 require "../config/config.php";
 
-if (!empty ($_SESSION["id"])) {
+if (!empty ($_SESSION["codeApogee"])) {
     header("Location: ../index.php");
 }
 
@@ -15,7 +15,7 @@ if (isset ($_POST["submit"])) {
     if (mysqli_num_rows($result) > 0) {
         if ($mdp == $row["mdp"]) {
             $_SESSION["login"] = true;
-            $_SESSION["id"] = $row["id"];
+            $_SESSION["codeApogee"] = $row["codeApogee"];
 
             echo
                 "<script> alert('Connection reussi.'); </script>";
@@ -78,20 +78,6 @@ if (isset ($_POST["submit"])) {
         </form>
     </div>
     </div>
-
-    <!-- <h2>S'authentifier</h2>
-    <form action="" class="" method="post" autocomplete="off">
-        <label for="email"> Adresse electronique : </label>
-        <input type="email" name="email" id="email" required value="">
-
-        <label for="mdp"> Mot de passe : </label>
-        <input type="password" name="mdp" id="mdp" required value="">
-
-        <button type="submit" name="submit">S'authentifier</button>
-    </form>
-
-    <br />
-    <a href="registration.php">S'enregistrer</a> -->
 </body>
 
 </html>

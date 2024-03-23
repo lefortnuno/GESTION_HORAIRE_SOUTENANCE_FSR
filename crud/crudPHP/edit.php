@@ -5,12 +5,12 @@ if (isset ($_POST['edit'])) {
 
 
     // Récupérez l'ID de la session
-    $id = $_SESSION["id"];
+    $codeApogee = $_SESSION["codeApogee"];
 
     // Requête pour récupérer les informations de l'utilisateur à partir de l'ID
-    $sql = "SELECT * FROM tb_user WHERE id = ?";
+    $sql = "SELECT * FROM tb_user WHERE codeApogee = ?";
     $stmt = $conn->prepare($sql);
-    $stmt->bind_param("i", $id);
+    $stmt->bind_param("i", $codeApogee);
     $stmt->execute();
     $result = $stmt->get_result();
     $row = $result->fetch_assoc();
@@ -24,9 +24,9 @@ if (isset ($_POST['edit'])) {
     $email = $_POST['email'];
 
     // Requête pour mettre à jour les informations de l'utilisateur dans la base de données
-    $sql_update = "UPDATE tb_user SET nom = ?, prenom = ?, email = ? WHERE id = ?;";
+    $sql_update = "UPDATE tb_user SET nom = ?, prenom = ?, email = ? WHERE codeApogee = ?;";
     $stmt_update = $conn->prepare($sql_update);
-    $stmt_update->bind_param("sssi", $nom, $prenom, $email, $id);
+    $stmt_update->bind_param("sssi", $nom, $prenom, $email, $codeApogee);
     $stmt_update->execute();
 
     if ($stmt_update->errno) {
@@ -38,7 +38,7 @@ if (isset ($_POST['edit'])) {
     // Charger les données existantes depuis le fichier XML
     $users = simplexml_load_file('../../files/xml/doctorants.xml');
     $user = $users->addChild('user');
-    $user->addChild('id', $id);
+    $user->addChild('codeApogee', $codeApogee);
     $user->addChild('nom', $nom);
     $user->addChild('prenom', $prenom);
     $user->addChild('email', $email);

@@ -1,7 +1,7 @@
 <?php
 require "../config/config.php";
 
-if (!empty ($_SESSION["id"])) {
+if (!empty ($_SESSION["codeApogee"])) {
     header("Location: ../index.php");
 }
 
@@ -15,7 +15,7 @@ if (isset ($_POST["submit"])) {
     if (mysqli_num_rows($result) > 0) {
         if ($mdp == $row["mdp"]) {
             $_SESSION["login"] = true;
-            $_SESSION["id"] = $row["id"];
+            $_SESSION["codeApogee"] = $row["codeApogee"];
 
             echo
                 "<script> alert('Connection reussi.'); </script>";

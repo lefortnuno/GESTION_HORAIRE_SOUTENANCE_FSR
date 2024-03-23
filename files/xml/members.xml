@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <users>
   <user>
-    <id>Et-1</id>
+    <codeApogee>Et-1</codeApogee>
     <firstname>LEFORT</firstname>
     <lastname>N.Nuno</lastname>
     <address>Bettana-Sal&#xE9;</address>
   </user>
   <user>
-    <id>Et-2</id>
+    <codeApogee>Et-2</codeApogee>
     <firstname>TROFEL</firstname>
     <lastname>N.Nono</lastname>
     <address>Madagascar</address>
   </user>
   <user>
-    <id>Et-3</id>
+    <codeApogee>Et-3</codeApogee>
     <firstname>SUN</firstname>
     <lastname/>
     <address>Paris 47</address>

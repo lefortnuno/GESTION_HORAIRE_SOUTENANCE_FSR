@@ -1,9 +1,9 @@
 <?php
 require '../../config/config.php';
 
-if (!empty ($_SESSION["id"])) {
-    $id = $_SESSION["id"];
-    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE id = $id");
+if (!empty ($_SESSION["codeApogee"])) {
+    $codeApogee = $_SESSION["codeApogee"];
+    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = $codeApogee");
     $row = mysqli_fetch_assoc($result);
 } else {
     header("Location: auth/login.php");
@@ -73,7 +73,7 @@ if (!empty ($_SESSION["id"])) {
                                     <div class="input-field">
                                         <label>Code Apogée </label>
                                         <input type="number" placeholder="Entrez votre Code Apogée" name="codeApogee"
-                                            id="codeApogee" value="<?php echo $row['id']; ?>" readonly
+                                            id="codeApogee" value="<?php echo $row['codeApogee']; ?>" readonly
                                             style="background-color:rgba(13, 0, 0, 0.2);">
                                     </div>
 
@@ -91,8 +91,8 @@ if (!empty ($_SESSION["id"])) {
 
                                     <div class="input-field">
                                         <label>Date de naissance </label>
-                                        <input type="date" placeholder="Entrez votre date de naissance" name="datenaiss"
-                                            id="datenaiss" value="">
+                                        <input type="date" placeholder="Entrez votre date de naissance" name="dateNaiss"
+                                            id="dateNaiss" value="">
                                     </div>
 
                                     <div class="input-field">
@@ -161,7 +161,7 @@ if (!empty ($_SESSION["id"])) {
                                     <div class="input-field">
                                         <label>Disciplines </label>
                                         <select name="disciplines" id="disciplines" value="">
-                                            <option disabled selected>Choix de l'institution</option>
+                                            <option disabled selected>Choix de la discipline</option>
                                             <option>Math</option>
                                             <option>Info</option>
                                             <option>Bio</option>

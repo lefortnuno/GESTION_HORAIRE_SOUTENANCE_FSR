@@ -4,7 +4,7 @@ if (isset ($_POST['add'])) {
 	//open xml file
 	$users = simplexml_load_file('../../files/xml/members.xml');
 	$user = $users->addChild('user');
-	$user->addChild('id', $_POST['id']);
+	$user->addChild('codeApogee', $_POST['codeApogee']);
 	$user->addChild('firstname', $_POST['firstname']);
 	$user->addChild('lastname', $_POST['lastname']);
 	$user->addChild('address', $_POST['address']);

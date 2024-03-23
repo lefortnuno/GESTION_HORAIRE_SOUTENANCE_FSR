@@ -1,27 +1,32 @@
 <?php
 require '../config/config.php';
 
-if (!empty ($_SESSION["id"])) {
+if (!empty ($_SESSION["codeApogee"])) {
     header("Location: ../index.php");
 }
 
 if (isset ($_POST["submit"])) {
+    $codeApogee = $_POST["codeApogee"];
+    $email = $_POST["email"];
     $nom = $_POST["nom"];
     $prenom = $_POST["prenom"];
-    $email = $_POST["email"];
+    $numTel = $_POST["numTel"];
+    $adresse = $_POST["adresse"];
     $mdp = $_POST["mdp"];
     $cmdp = $_POST["cmdp"];
 
-    $dupliquer = mysqli_query($conn, "SELECT * FROM tb_user WHERE email = '$email'");
+    $dupliquer = mysqli_query($conn, "SELECT * FROM tb_user WHERE email = '$email' OR codeApogee = '$codeApogee';");
     if (mysqli_num_rows($dupliquer) > 0) {
         echo
-            "<script> alert('Votre Email existe déjà dans la base de donnée !'); </script>";
+            "<script> alert('Code Apogée et/ou Email existant !'); </script>";
     } else {
         if ($mdp == $cmdp) {
-            $query = "INSERT INTO tb_user(nom, prenom, email, mdp) VALUES( '$nom', '$prenom', '$email', '$mdp')";
+            $query = "INSERT INTO tb_user(codeApogee, email, nom, prenom, numTel, adresse, mdp) VALUES('$codeApogee','$email', '$nom', '$prenom', '$numTel', '$adresse', '$mdp')";
             mysqli_query($conn, $query);
             echo
                 "<script> alert('Enregistrement reussi.'); </script>";
+
+            header("Location: login.php");
         } else {
             echo
                 "<script> alert('Les mot de passe ne correspondent pas !'); </script>";
@@ -53,48 +58,49 @@ if (isset ($_POST["submit"])) {
                     <div class="fields">
                         <div class="input-field">
                             <label>Code Apogée </label>
-                            <input type="number" placeholder="Enter ID type" name="codeApogee" id="codeApogee" value=""
-                                required>
+                            <input type="number" placeholder="Entrez votre Code Apogée" name="codeApogee"
+                                id="codeApogee" value="" required>
                         </div>
 
                         <div class="input-field">
                             <label>Email </label>
-                            <input type="email" placeholder="Enter ID number" name="email" id="email" value="" required>
+                            <input type="email" placeholder="Entrez votre Email" name="email" id="email" value=""
+                                required>
                         </div>
 
                         <div class="input-field">
                             <label>Nom </label>
-                            <input type="text" placeholder="Enter your name" name="nom" id="nom" value="" required>
+                            <input type="text" placeholder="Entrez votre Nom" name="nom" id="nom" value="" required>
                         </div>
 
                         <div class="input-field">
                             <label>Prénom</label>
-                            <input type="text" placeholder="Enter your email" name="prenom" id="prenom" value=""
+                            <input type="text" placeholder="Entrez votre Prénom" name="prenom" id="prenom" value=""
                                 required>
                         </div>
 
                         <div class="input-field">
                             <label>Téléphone </label>
-                            <input type="number" placeholder="Enter mobile number" name="numTel" id="numTel" value=""
-                                required>
+                            <input type="number" placeholder="Entrez votre numéro de téléphone" name="numTel"
+                                id="numTel" value="" required>
                         </div>
 
                         <div class="input-field">
                             <label>Adresse </label>
-                            <input type="text" placeholder="Enter your email" name="adresse" id="adresse" value=""
+                            <input type="text" placeholder="Entrez votre adresse" name="adresse" id="adresse" value=""
                                 required>
                         </div>
 
                         <div class="input-field">
                             <label>Mot de passe </label>
-                            <input type="password" placeholder="Enter your occupation" name="mdp" id="mdp" value=""
+                            <input type="password" placeholder="Entrez votre mot de passe" name="mdp" id="mdp" value=""
                                 required>
                         </div>
 
                         <div class="input-field">
                             <label>Confirmation mot de passe </label>
-                            <input type="password" placeholder="Enter birth date" name="cmdp" id="cmdp" value=""
-                                required>
+                            <input type="password" placeholder="Confirmez votre mot de passe" name="cmdp" id="cmdp"
+                                value="" required>
                         </div>
                     </div>
                 </div>

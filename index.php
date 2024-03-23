@@ -1,9 +1,9 @@
 <?php
 require 'config/config.php';
 
-if (!empty ($_SESSION["id"])) {
-    $id = $_SESSION["id"];
-    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE id = $id");
+if (!empty ($_SESSION["codeApogee"])) {
+    $codeApogee = $_SESSION["codeApogee"];
+    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = $codeApogee");
     $row = mysqli_fetch_assoc($result);
 } else {
     header("Location: auth/login.php");
@@ -59,7 +59,7 @@ if (!empty ($_SESSION["id"])) {
 
                 <table class="table table-bordered table-striped" style="margin-top:20px;">
                     <thead>
-                        <th>ID</th>
+                        <th>Code Apogée</th>
                         <th>Nomm</th>
                         <th>Prénom</th>
                         <th>Email</th>
@@ -75,7 +75,7 @@ if (!empty ($_SESSION["id"])) {
                             ?>
                             <tr>
                                 <td>
-                                    <?php echo $row->id; ?>
+                                    <?php echo $row->codeApogee; ?>
                                 </td>
                                 <td>
                                     <?php echo $row->nom; ?>
@@ -87,10 +87,10 @@ if (!empty ($_SESSION["id"])) {
                                     <?php echo $row->email; ?>
                                 </td>
                                 <td>
-                                    <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal"
+                                    <a href="#edit_<?php echo $row->codeApogee; ?>" data-toggle="modal"
                                         class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span>
                                         Modifier </a>
-                                    <a href="#delete_<?php echo $row->id; ?>" data-toggle="modal"
+                                    <a href="#delete_<?php echo $row->codeApogee; ?>" data-toggle="modal"
                                         class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span>
                                         Supprimer</a>
                                 </td>

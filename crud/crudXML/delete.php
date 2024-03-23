@@ -1,6 +1,6 @@
 <?php
 session_start();
-$id = $_GET['id'];
+$codeApogee = $_GET['codeApogee'];
 
 $users = simplexml_load_file('../../files/xml/members.xml');
 
@@ -9,7 +9,7 @@ $index = 0;
 $i = 0;
 
 foreach ($users->user as $user) {
-	if ($user->id == $id) {
+	if ($user->codeApogee == $codeApogee) {
 		$index = $i;
 		break;
 	}
