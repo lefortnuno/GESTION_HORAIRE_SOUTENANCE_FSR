@@ -62,14 +62,14 @@ if (!empty ($_SESSION["id"])) {
                         <th>ID</th>
                         <th>Nomm</th>
                         <th>Prénom</th>
-                        <th>Addresse</th>
+                        <th>Email</th>
                         <th> </th>
                     </thead>
 
                     <tbody>
                         <?php
                         // Chargement des fichers xml 
-                        $file = simplexml_load_file('files/xml/members.xml');
+                        $file = simplexml_load_file('files/xml/doctorants.xml');
 
                         foreach ($file->user as $row) {
                             ?>
@@ -78,13 +78,13 @@ if (!empty ($_SESSION["id"])) {
                                     <?php echo $row->id; ?>
                                 </td>
                                 <td>
-                                    <?php echo $row->firstname; ?>
+                                    <?php echo $row->nom; ?>
                                 </td>
                                 <td>
-                                    <?php echo $row->lastname; ?>
+                                    <?php echo $row->prenom; ?>
                                 </td>
                                 <td>
-                                    <?php echo $row->address; ?>
+                                    <?php echo $row->email; ?>
                                 </td>
                                 <td>
                                     <a href="#edit_<?php echo $row->id; ?>" data-toggle="modal"
