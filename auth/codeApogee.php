@@ -6,10 +6,10 @@ if (!empty ($_SESSION["codeApogee"])) {
 }
 
 if (isset ($_POST["submit"])) {
-    $email = $_POST["email"];
+    $codeApogee = $_POST["codeApogee"];
     $mdp = $_POST["mdp"];
 
-    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE email = '$email'");
+    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = '$codeApogee'");
     $row = mysqli_fetch_assoc($result);
 
     if (mysqli_num_rows($result) > 0) {
@@ -52,8 +52,8 @@ if (isset ($_POST["submit"])) {
             </div>
 
             <div class="input-field">
-                <input type="email" name="email" id="email" required value="" class="input" placeholder="Code Apogée"
-                    required />
+                <input type="codeApogee" name="codeApogee" id="codeApogee" required value="" class="input"
+                    placeholder="Code Apogée" required />
                 <i class="bx bx-user"></i>
             </div>
             <div class="input-field">
