@@ -1,0 +1,55 @@
+<!DOCTYPE submission [
+    <!ELEMENT submission (student+)>
+    <!ELEMENT student (author, title, abstract, keywords, disciplines, speciality, theme, institution, structure, mail, phone, address, supervisor, cosupervisor)>
+
+    <!ELEMENT author (firstname, lastname, birth)>
+    <!ATTLIST author 
+        sex (M|F) #REQUIRED
+        codeApogee CDATA #REQUIRED
+        registrationYear (1|2|3|4|5|6) #REQUIRED
+    >
+    <!ELEMENT firstname (#PCDATA)>
+    <!ELEMENT lastname (#PCDATA)>
+    <!ELEMENT birth (#PCDATA)>
+
+    <!ELEMENT title (#PCDATA)>
+
+    <!ELEMENT abstract (#PCDATA)>
+    <!ATTLIST abstract
+        maxLength CDATA #FIXED "1000">
+
+    <!ELEMENT keywords (#PCDATA)>
+
+    <!ELEMENT disciplines (#PCDATA)>
+    <!ATTLIST disciplines
+            options (Math|info|bio|géo|chimie|phyque) #REQUIRED>
+
+    <!ELEMENT speciality (#PCDATA)>
+    <!ATTLIST speciality
+            options CDATA #REQUIRED>
+
+    <!ELEMENT theme (#PCDATA)>
+    <!ATTLIST theme
+            type CDATA #REQUIRED
+            options (T1|T2|T3|...) #IMPLIED>
+
+    <!ELEMENT institution (#PCDATA)>
+    <!ATTLIST institution
+            options (A|B|C|D|E) #REQUIRED>
+
+    <!ELEMENT structure (#PCDATA)>
+    <!ATTLIST structure
+            type (laboratory|group) #REQUIRED>
+
+    <!ELEMENT mail (#PCDATA)>
+    <!ATTLIST mail
+            type (institutionnel|autre) #REQUIRED>
+
+    <!ELEMENT phone (#PCDATA)>
+
+    <!ELEMENT address (ville)>
+    <!ELEMENT ville (#PCDATA)>
+
+    <!ELEMENT supervisor (firstname, lastname, mail, institution)>
+    <!ELEMENT cosupervisor (firstname, lastname, mail, institution)>
+]>

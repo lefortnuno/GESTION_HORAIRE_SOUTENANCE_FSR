@@ -59,7 +59,7 @@ if (isset ($_POST['edit'])) {
         echo "Erreur lors de l'exécution de la requête : " . $stmt_update->error;
     }
 
-    $_SESSION['message'] = 'Modification réussi';
+    $_SESSION['message'] = 'Enregistrement réussi';
 
     // Charger les données existantes depuis le fichier XML
     $submission = simplexml_load_file('../../files/xml/doctorants.xml');

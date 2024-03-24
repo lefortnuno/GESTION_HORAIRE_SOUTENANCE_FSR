@@ -31,7 +31,7 @@
 		<firstname></firstname>
 		<lastname></lastname>
 		<mail></mail>
-		<institution></institution>
+		<institution></institution> 
 	</supervisor>
 	<cosupervisor>
 		<firstname></firstname>
