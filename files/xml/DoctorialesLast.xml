@@ -1,0 +1,42 @@
+<submission> 
+	<!-- firstauthor unique, author 0 ou plusieurs-->
+	<author sex="M|F" ApogeCode="" registrationYear="1|2...|6">
+		<firstname></firstname>
+		<lastname></lastname>
+		<birth></birth>
+	</author>
+	<title></title>
+	<abstract>
+		<!-- Au plus 1000 caractères -->
+	</abstract>
+	<keywords></keywords>
+	<disciplines></disciplines>
+	<!-- choix dans une liste déroulante Math, info, bio, géo, chimie, phyque -->
+	<speciality></speciality>
+	<theme>
+		<!-- choix dans une liste déroulante de thèmes T1, T2 .. -->
+	</theme>
+	<institution>
+		<!-- Choix dans une liste déroulante A,B,...,E-->
+	</institution>
+	<structure type="laboratory|group"></structure>
+	<mail type="institutionnel|autre">
+		<!-- 2mail au max -->
+	</mail>
+	<phone></phone>
+	<address>
+		<ville></ville>
+	</address>
+	<supervisor>
+		<firstname></firstname>
+		<lastname></lastname>
+		<mail></mail>
+		<institution></institution>
+	</supervisor>
+	<cosupervisor>
+		<firstname></firstname>
+		<lastname></lastname>
+		<mail></mail>
+		<institution></institution>
+	</cosupervisor>
+</submission>

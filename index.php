@@ -71,20 +71,20 @@ if (!empty ($_SESSION["codeApogee"])) {
                         // Chargement des fichers xml 
                         $file = simplexml_load_file('files/xml/doctorants.xml');
 
-                        foreach ($file->user as $row) {
+                        foreach ($file->student as $row) {
                             ?>
                             <tr>
                                 <td>
-                                    <?php echo $row->codeApogee; ?>
+                                    <?php echo $row->author['codeApogee']; ?>
                                 </td>
                                 <td>
-                                    <?php echo $row->nom; ?>
+                                    <?php echo $row->author->firstname; ?>
                                 </td>
                                 <td>
-                                    <?php echo $row->prenom; ?>
+                                    <?php echo $row->author->lastname; ?>
                                 </td>
                                 <td>
-                                    <?php echo $row->email; ?>
+                                    <?php echo $row->mail->mail; ?>
                                 </td>
                                 <td>
                                     <a href="#edit_<?php echo $row->codeApogee; ?>" data-toggle="modal"

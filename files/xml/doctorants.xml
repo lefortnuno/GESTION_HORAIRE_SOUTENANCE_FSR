@@ -1,15 +1,108 @@
 <?xml version="1.0"?>
-<users>
-  <user>
-    <codeApogee>4</codeApogee>
-    <nom>BAO</nom>
-    <prenom>Baretty</prenom>
-    <email>bao@gmail.com</email>
-  </user>
-  <user>
-    <codeApogee>75335700</codeApogee>
-    <nom>DAO</nom>
-    <prenom>Dong</prenom>
-    <email>d@gmail.com</email>
-  </user>
-</users>
+<submission>
+  <student>
+    <author sex="" codeApogee="8585858" registrationYear="">
+      <firstname>c</firstname>
+      <lastname>c</lastname>
+      <birth/>
+    </author>
+    <title/>
+    <abstract/>
+    <keywords/>
+    <disciplines/>
+    <speciality/>
+    <theme/>
+    <institution/>
+    <structure type="group"/>
+    <mail>
+      <mail type="institutionnel">c@gmail.com</mail>
+      <mail type="autre">c@gmail.com</mail>
+    </mail>
+    <phone/>
+    <address>
+      <ville/>
+    </address>
+    <supervisor>
+      <firstname/>
+      <lastname/>
+      <mail/>
+      <institution/>
+    </supervisor>
+    <cosupervisor>
+      <firstname/>
+      <lastname/>
+      <mail/>
+      <institution/>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="Homme" codeApogee="2358585858" registrationYear="">
+      <firstname>c</firstname>
+      <lastname>c</lastname>
+      <birth>2024-03-24</birth>
+    </author>
+    <title>d</title>
+    <abstract>d</abstract>
+    <keywords>d</keywords>
+    <disciplines>Math</disciplines>
+    <speciality>d</speciality>
+    <theme>T1</theme>
+    <institution>E</institution>
+    <structure type="group">d</structure>
+    <mail>
+      <mail type="institutionnel">c@gmail.com</mail>
+      <mail type="autre">c@gmail.com</mail>
+    </mail>
+    <phone>4952852152</phone>
+    <address>
+      <ville>c</ville>
+    </address>
+    <supervisor>
+      <firstname/>
+      <lastname/>
+      <mail>x@gmail.com</mail>
+      <institution>B</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname/>
+      <lastname/>
+      <mail>y@gmail.com</mail>
+      <institution/>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="F" codeApogee="75335789" registrationYear="2024">
+      <firstname>CLOE</firstname>
+      <lastname>Davoane</lastname>
+      <birth>1999-07-29</birth>
+    </author>
+    <title>CLOSE</title>
+    <abstract>Pour afficher l'attribut sex de l'&#xE9;l&#xE9;ment author en PHP, assurez-vous que $row est un objet SimpleXMLElement repr&#xE9;sentant le XML que vous avez analys&#xE9;. Ensuite, vous pouvez acc&#xE9;der &#xE0; l'attribut sex de la mani&#xE8;re suivante :</abstract>
+    <keywords>closement</keywords>
+    <disciplines>Info</disciplines>
+    <speciality>IAO</speciality>
+    <theme>T3</theme>
+    <institution>A</institution>
+    <structure type="group">AUCUNE</structure>
+    <mail>
+      <mail type="institutionnel">cloedavoane@gmail.com</mail>
+      <mail type="autre">cloedavoane@gmail.com</mail>
+    </mail>
+    <phone>0656895748</phone>
+    <address>
+      <ville>Paris</ville>
+    </address>
+    <supervisor>
+      <firstname>X1</firstname>
+      <lastname>X11</lastname>
+      <mail>x111@gmail.com</mail>
+      <institution>A</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>Y1</firstname>
+      <lastname>Y11</lastname>
+      <mail>y111@yaohoo.fr</mail>
+      <institution>A</institution>
+    </cosupervisor>
+  </student>
+</submission>

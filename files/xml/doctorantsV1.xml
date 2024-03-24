@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<users>
+  <user>
+    <codeApogee>4</codeApogee>
+    <nom>BAO</nom>
+    <prenom>Baretty</prenom>
+    <email>bao@gmail.com</email>
+  </user>
+  <user>
+    <codeApogee>75335700</codeApogee>
+    <nom>DAO</nom>
+    <prenom>Dong</prenom>
+    <email>d@gmail.com</email>
+  </user>
+</users>

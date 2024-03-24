@@ -99,8 +99,8 @@ if (!empty ($_SESSION["codeApogee"])) {
                                         <label>Genre </label>
                                         <select name="sexe" id="sexe" value="">
                                             <option disabled selected>Choix du sexe </option>
-                                            <option>Homme</option>
-                                            <option>Femme</option>
+                                            <option value="H">Homme</option>
+                                            <option value="F">Femme</option>
                                         </select>
                                     </div>
 
@@ -255,7 +255,7 @@ if (!empty ($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Institution </label>
-                                        <select name="instititionCoSup" id="instititionCoSup" value="">
+                                        <select name="institutionCoSup" id="institutionCoSup" value="">
                                             <option disabled selected>Institutiondu co-superviseur</option>
                                             <option>A</option>
                                             <option>B</option>
