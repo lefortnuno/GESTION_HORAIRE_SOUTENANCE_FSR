@@ -58,7 +58,6 @@ if (!empty ($_SESSION["codeApogee"])) {
                 }
                 ?>
 
-
                 <div class="containerForm">
                     <header>Validation</header>
 
@@ -79,20 +78,20 @@ if (!empty ($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Nom </label>
-                                        <input type="text" placeholder="Entrez votre nom" name="nom" id="nom"
+                                        <input required type="text" placeholder="Entrez votre nom" name="nom" id="nom"
                                             value="<?php echo $row['nom']; ?>">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Prénom</label>
-                                        <input type="text" placeholder="Entrez votre prénom" name="prenom" id="prenom"
-                                            value="<?php echo $row['prenom']; ?>">
+                                        <input required type="text" placeholder="Entrez votre prénom" name="prenom"
+                                            id="prenom" value="<?php echo $row['prenom']; ?>">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Date de naissance </label>
-                                        <input type="date" placeholder="Entrez votre date de naissance" name="dateNaiss"
-                                            id="dateNaiss" value="">
+                                        <input required type="date" placeholder="Entrez votre date de naissance"
+                                            name="dateNaiss" id="dateNaiss" value="">
                                     </div>
 
                                     <div class="input-field">
@@ -106,20 +105,20 @@ if (!empty ($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Téléphone </label>
-                                        <input type="number" placeholder="Entrez votre numéro de téléphone"
+                                        <input required type="number" placeholder="Entrez votre numéro de téléphone"
                                             name="numTel" id="numTel" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Adresse </label>
-                                        <input type="text" placeholder="Entrez votre adresse" name="adresse"
+                                        <input required type="text" placeholder="Entrez votre adresse" name="adresse"
                                             id="adresse" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Email </label>
-                                        <input type="email" placeholder="Entrez votre email" name="email" id="email"
-                                            value="<?php echo $row['email']; ?>">
+                                        <input required type="email" placeholder="Entrez votre email" name="email"
+                                            id="email" value="<?php echo $row['email']; ?>">
                                     </div>
                                 </div>
                             </div>
@@ -130,8 +129,8 @@ if (!empty ($_SESSION["codeApogee"])) {
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Titre </label>
-                                        <input type="text" placeholder="Saisissez le titre" name="titre" id="titre"
-                                            value="">
+                                        <input required type="text" placeholder="Saisissez le titre" name="titre"
+                                            id="titre" value="">
                                     </div>
 
                                     <div class="input-field">
@@ -148,13 +147,13 @@ if (!empty ($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Abstract </label>
-                                        <input type="text" placeholder="Saisissez l'abstract" name="abstract"
+                                        <input required type="text" placeholder="Saisissez l'abstract" name="abstract"
                                             id="abstract" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Mot clé </label>
-                                        <input type="text" placeholder="Saisissez le mot clé" name="keywords"
+                                        <input required type="text" placeholder="Saisissez le mot clé" name="keywords"
                                             id="keywords" value="">
                                     </div>
 
@@ -173,8 +172,8 @@ if (!empty ($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Specialité </label>
-                                        <input type="text" placeholder="Saisissez votre Specialité" name="specialite"
-                                            id="specialite" value="">
+                                        <input required type="text" placeholder="Saisissez votre Specialité"
+                                            name="specialite" id="specialite" value="">
                                     </div>
 
                                     <div class="input-field">
@@ -191,8 +190,8 @@ if (!empty ($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Structure</label>
-                                        <input type="text" placeholder="Saisissez votre Structure" name="structure"
-                                            id="structure" value="">
+                                        <input required type="text" placeholder="Saisissez votre Structure"
+                                            name="structure" id="structure" value="">
                                     </div>
                                 </div>
                             </div>
@@ -203,18 +202,18 @@ if (!empty ($_SESSION["codeApogee"])) {
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Nom </label>
-                                        <input type="text" placeholder="Nom du superviseur" name="nomSup" id="nomSup"
-                                            value="">
+                                        <input required type="text" placeholder="Nom du superviseur" name="nomSup"
+                                            id="nomSup" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Prénom</label>
-                                        <input type="text" placeholder="Prénom du superviseur" name="prenomSup"
+                                        <input required type="text" placeholder="Prénom du superviseur" name="prenomSup"
                                             id="prenomSup" value="">
                                     </div>
                                     <div class="input-field">
                                         <label>Email </label>
-                                        <input type="email" placeholder="Email du superviseur" name="emailSup"
+                                        <input required type="email" placeholder="Email du superviseur" name="emailSup"
                                             id="emailSup" value="">
                                     </div>
 
@@ -238,19 +237,19 @@ if (!empty ($_SESSION["codeApogee"])) {
                                 <div class="fields">
                                     <div class="input-field">
                                         <label>Nom </label>
-                                        <input type="text" placeholder="Nom du co-superviseur" name="nomCoSup"
+                                        <input required type="text" placeholder="Nom du co-superviseur" name="nomCoSup"
                                             id="nomCoSup" value="">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Prénom</label>
-                                        <input type="text" placeholder="Prénom du co-superviseur" name="prenomCoSup"
-                                            id="prenomCoSup" value="">
+                                        <input required type="text" placeholder="Prénom du co-superviseur"
+                                            name="prenomCoSup" id="prenomCoSup" value="">
                                     </div>
                                     <div class="input-field">
                                         <label>Email </label>
-                                        <input type="email" placeholder="Email du co-superviseur" name="emailCoSup"
-                                            id="emailCoSup" value="">
+                                        <input required type="email" placeholder="Email du co-superviseur"
+                                            name="emailCoSup" id="emailCoSup" value="">
                                     </div>
 
                                     <div class="input-field">

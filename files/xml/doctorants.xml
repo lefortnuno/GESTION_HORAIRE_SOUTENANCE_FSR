@@ -140,4 +140,39 @@
       <institution/>
     </cosupervisor>
   </student>
+  <student>
+    <author sex="H" codeApogee="75335789" registrationYear="2024">
+      <firstname>CLOE</firstname>
+      <lastname>Davoane</lastname>
+      <birth>2315-06-04</birth>
+    </author>
+    <title>a</title>
+    <abstract>a</abstract>
+    <keywords>a</keywords>
+    <disciplines/>
+    <speciality>a</speciality>
+    <theme/>
+    <institution/>
+    <structure type="group">a</structure>
+    <mail>
+      <mail type="institutionnel">cloedavoane@gmail.com</mail>
+      <mail type="autre">cloedavoane@gmail.com</mail>
+    </mail>
+    <phone>612</phone>
+    <address>
+      <ville>a</ville>
+    </address>
+    <supervisor>
+      <firstname>a</firstname>
+      <lastname>a</lastname>
+      <mail>a@gmail.com</mail>
+      <institution>A</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>a</firstname>
+      <lastname>a</lastname>
+      <mail>a@yaoho.com</mail>
+      <institution/>
+    </cosupervisor>
+  </student>
 </submission>
