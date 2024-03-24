@@ -29,7 +29,7 @@ if (!empty ($_SESSION["codeApogee"])) {
     <div class="container">
         <h1 class="page-header text-center">CRUD avec un XML en utilisant PHP</h1>
         <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+            <div class="col-sm-11 col-sm-offset-1">
                 <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span
                         class="glyphicon glyphicon-plus"></span> Nouveau </a>
 
@@ -60,9 +60,9 @@ if (!empty ($_SESSION["codeApogee"])) {
                 <table class="table table-bordered table-striped" style="margin-top:20px;">
                     <thead>
                         <th>Code Apogée</th>
-                        <th>Nomm</th>
-                        <th>Prénom</th>
-                        <th>Email</th>
+                        <th>Nom & Prénom</th>
+                        <th>Thème</th>
+                        <th>Téléphone</th>
                         <th> </th>
                     </thead>
 
@@ -79,12 +79,13 @@ if (!empty ($_SESSION["codeApogee"])) {
                                 </td>
                                 <td>
                                     <?php echo $row->author->firstname; ?>
-                                </td>
-                                <td>
                                     <?php echo $row->author->lastname; ?>
                                 </td>
                                 <td>
-                                    <?php echo $row->mail->mail; ?>
+                                    <?php echo $row->theme; ?>
+                                </td>
+                                <td>
+                                    <?php echo $row->phone; ?>
                                 </td>
                                 <td>
                                     <a href="#edit_<?php echo $row->codeApogee; ?>" data-toggle="modal"
