@@ -19,6 +19,13 @@ if (!empty ($_SESSION["codeApogee"])) {
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="files/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="files/css/nav.css">
+    <style>
+        /* Définir la classe personnalisée pour le titre h1 */
+        .custom-h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,11 +34,12 @@ if (!empty ($_SESSION["codeApogee"])) {
     ?>
 
     <div class="container">
-        <h1 class="page-header text-center">CRUD avec un XML en utilisant PHP</h1>
+        <h1 class="page-header text-center custom-h1">Découvrez la liste des doctorants
+            inscrits</h1>
         <div class="row">
             <div class="col-sm-11 col-sm-offset-1">
-                <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span
-                        class="glyphicon glyphicon-plus"></span> Nouveau </a>
+                <!-- <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span
+                        class="glyphicon glyphicon-plus"></span> Nouveau </a> -->
 
                 <!-- Mes message d'alert et de notification -->
                 <?php
@@ -57,13 +65,13 @@ if (!empty ($_SESSION["codeApogee"])) {
                 }
                 ?>
 
-                <table class="table table-bordered table-striped" style="margin-top:20px;">
+                <table class="table table-bordered table-striped">
                     <thead>
                         <th>Code Apogée</th>
                         <th>Nom & Prénom</th>
                         <th>Thème</th>
                         <th>Téléphone</th>
-                        <th> </th>
+                        <!-- <th> </th> -->
                     </thead>
 
                     <tbody>
@@ -87,14 +95,14 @@ if (!empty ($_SESSION["codeApogee"])) {
                                 <td>
                                     <?php echo $row->phone; ?>
                                 </td>
-                                <td>
-                                    <a href="#edit_<?php echo $row->codeApogee; ?>" data-toggle="modal"
-                                        class="btn btn-success btn-sm"><span class="glyphicon glyphicon-edit"></span>
-                                        Modifier </a>
-                                    <a href="#delete_<?php echo $row->codeApogee; ?>" data-toggle="modal"
-                                        class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span>
-                                        Supprimer</a>
-                                </td>
+                                <!-- <td>
+                                    <a href="#edit_<?php echo $row->codeApogee; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span
+                                        class="glyphicon glyphicon-edit"></span>
+                                    Modifier </a>
+                                <a href="#delete_<?php echo $row->codeApogee; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span
+                                        class="glyphicon glyphicon-trash"></span>
+                                    Supprimer</a>
+                                </td> -->
                                 <?php include ('modals/edit_delete_modal.php'); ?>
                             </tr>
                             <?php

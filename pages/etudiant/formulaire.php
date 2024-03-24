@@ -267,10 +267,11 @@ if (!empty ($_SESSION["codeApogee"])) {
                                 </div>
 
                                 <div class="buttons fieldsForButtons">
-                                    <div class="backBtn btn btn-danger">
+                                    <a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/index.php"
+                                        class="backBtn btn btn-danger">
                                         <i class="uil uil-navigator"></i>
                                         <span class="btnText">Annuler</span>
-                                    </div>
+                                    </a>
 
                                     <button type="submit" name="edit" class="sumbit btn btn-success backBtn2">
                                         <span class="btnText">Enregistrer</span>
