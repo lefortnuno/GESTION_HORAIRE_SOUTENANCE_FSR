@@ -31,8 +31,10 @@ foreach ($xml->student as $student) {
         'date' => date('Y-m-d', $soutenance_time),
         'heure_debut' => date('H:i', $soutenance_time),
         'heure_fin' => date('H:i', $soutenance_time + (20 * 60)), // Heure de fin de la soutenance
+        'codeApogee' => (string) $student->author['codeApogee'],
         'nom' => (string) $student->author->firstname . ' ' . (string) $student->author->lastname,
-        'theme' => (string) $student->theme
+        'theme' => (string) $student->theme,
+        'disciplines' => 'Salle ' . (string) $student->disciplines
     );
 
     // Vérifier si c'est le moment de faire une pause
@@ -42,8 +44,10 @@ foreach ($xml->student as $student) {
             'date' => 'PAUSE',
             'heure_debut' => '',
             'heure_fin' => '',
+            'codeApogee' => '',
             'nom' => '',
-            'theme' => ''
+            'theme' => '',
+            'disciplines' => ''
         );
 
         // Ajouter la durée de la pause au temps de soutenance actuel
@@ -79,10 +83,11 @@ foreach ($xml->student as $student) {
             <thead>
                 <tr>
                     <th>Date</th>
-                    <th>Heure de début</th>
-                    <th>Heure de fin</th>
+                    <th>Horaire</th>
+                    <th>Code Apogée</th>
                     <th>Nom et Prénom</th>
                     <th>Thème</th>
+                    <th>Salle</th>
                 </tr>
             </thead>
             <tbody>
@@ -92,16 +97,20 @@ foreach ($xml->student as $student) {
                             <?= $item['date'] ?>
                         </td>
                         <td>
-                            <?= $item['heure_debut'] ?>
+                            <?= $item['heure_debut'] ?> -
+                            <?= $item['heure_fin'] ?>
                         </td>
                         <td>
-                            <?= $item['heure_fin'] ?>
+                            <?= $item['codeApogee'] ?>
                         </td>
                         <td>
                             <?= $item['nom'] ?>
                         </td>
                         <td>
                             <?= $item['theme'] ?>
+                        </td>
+                        <td>
+                            <?= $item['disciplines'] ?>
                         </td>
                     </tr>
                 <?php endforeach; ?>
