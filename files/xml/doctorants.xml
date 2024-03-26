@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!DOCTYPE submission SYSTEM "../DTD/rules.dtd">
 <submission>
-   <student>
-    <author sex="H" codeApogee="A23131093" registrationYear="2024">
+  <student>
+    <author sex="H" codeApogee="23131043" registrationYear="2024">
       <firstname>AAA</firstname>
       <lastname>Andry</lastname>
       <birth>1999-12-12</birth>
@@ -36,7 +36,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="B23131093" registrationYear="2024">
       <firstname>BBB</firstname>
       <lastname>Bandry</lastname>
@@ -71,7 +71,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="c23131093" registrationYear="2024">
       <firstname>ccc</firstname>
       <lastname>cndry</lastname>
@@ -106,7 +106,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="D23131093" registrationYear="2024">
       <firstname>DDD</firstname>
       <lastname>Dndry</lastname>
@@ -141,7 +141,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="E23131093" registrationYear="2024">
       <firstname>EEE</firstname>
       <lastname>Endry</lastname>
@@ -176,7 +176,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="F23131093" registrationYear="2024">
       <firstname>FFF</firstname>
       <lastname>FAndry</lastname>
@@ -211,7 +211,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="G23131093" registrationYear="2024">
       <firstname>GGG</firstname>
       <lastname>GAndry</lastname>
@@ -246,7 +246,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="H23131093" registrationYear="2024">
       <firstname>HHH</firstname>
       <lastname>HAndry</lastname>
@@ -281,7 +281,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="I23131093" registrationYear="2024">
       <firstname>III</firstname>
       <lastname>Indry</lastname>
@@ -316,7 +316,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="J23131093" registrationYear="2024">
       <firstname>JJJ</firstname>
       <lastname>JAndry</lastname>
@@ -351,7 +351,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="K23131093" registrationYear="2024">
       <firstname>KKK</firstname>
       <lastname>KAndry</lastname>
@@ -386,7 +386,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="L23131093" registrationYear="2024">
       <firstname>LLL</firstname>
       <lastname>LAndry</lastname>
@@ -421,7 +421,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="M23131093" registrationYear="2024">
       <firstname>MMM</firstname>
       <lastname>MAndry</lastname>
@@ -456,7 +456,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="N23131093" registrationYear="2024">
       <firstname>NNN</firstname>
       <lastname>NNndry</lastname>
@@ -491,7 +491,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="O23131093" registrationYear="2024">
       <firstname>O</firstname>
       <lastname>Ondry</lastname>
@@ -526,7 +526,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="P23131093" registrationYear="2024">
       <firstname>PPP</firstname>
       <lastname>PPndry</lastname>
@@ -561,7 +561,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="Q23131093" registrationYear="2024">
       <firstname>Q</firstname>
       <lastname>Qndry</lastname>
@@ -596,7 +596,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="R23131093" registrationYear="2024">
       <firstname>RR</firstname>
       <lastname>RAndry</lastname>
@@ -631,7 +631,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="S23131093" registrationYear="2024">
       <firstname>SSS</firstname>
       <lastname>SSSndry</lastname>
@@ -666,7 +666,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="T23131093" registrationYear="2024">
       <firstname>TTT</firstname>
       <lastname>TTAndry</lastname>
@@ -701,7 +701,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="U23131093" registrationYear="2024">
       <firstname>UU</firstname>
       <lastname>Undry</lastname>
@@ -736,7 +736,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="V23131093" registrationYear="2024">
       <firstname>VV</firstname>
       <lastname>VAVndry</lastname>
@@ -771,7 +771,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>WWW</firstname>
       <lastname>WWndry</lastname>
@@ -806,7 +806,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>XX</firstname>
       <lastname>XXAndry</lastname>
@@ -841,7 +841,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>YYYY</firstname>
       <lastname>Yndry</lastname>
@@ -876,7 +876,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>ZZZZZ</firstname>
       <lastname>ZZndry</lastname>
@@ -911,9 +911,8 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-  
   <!-- NEWWWWWASSS -->
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131091" registrationYear="2024">
       <firstname>AAA</firstname>
       <lastname>Andry</lastname>
@@ -948,7 +947,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="B23131091" registrationYear="2024">
       <firstname>BBB</firstname>
       <lastname>Bandry</lastname>
@@ -983,7 +982,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="C23131091" registrationYear="2024">
       <firstname>CCC</firstname>
       <lastname>Cndry</lastname>
@@ -1018,7 +1017,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="D23131091" registrationYear="2024">
       <firstname>DDD</firstname>
       <lastname>Dndry</lastname>
@@ -1053,7 +1052,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="E23131091" registrationYear="2024">
       <firstname>EEE</firstname>
       <lastname>Endry</lastname>
@@ -1088,10 +1087,8 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-
   <!-- DUPLICATIONSSSSS -->
-
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>AAA</firstname>
       <lastname>Andry</lastname>
@@ -1126,7 +1123,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="B23131093" registrationYear="2024">
       <firstname>BBB</firstname>
       <lastname>Bandry</lastname>
@@ -1161,7 +1158,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="c23131093" registrationYear="2024">
       <firstname>ccc</firstname>
       <lastname>cndry</lastname>
@@ -1196,7 +1193,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="D23131093" registrationYear="2024">
       <firstname>DDD</firstname>
       <lastname>Dndry</lastname>
@@ -1231,7 +1228,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="E23131093" registrationYear="2024">
       <firstname>EEE</firstname>
       <lastname>Endry</lastname>
@@ -1266,7 +1263,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="F23131093" registrationYear="2024">
       <firstname>FFF</firstname>
       <lastname>FAndry</lastname>
@@ -1301,7 +1298,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="G23131093" registrationYear="2024">
       <firstname>GGG</firstname>
       <lastname>GAndry</lastname>
@@ -1336,7 +1333,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="H23131093" registrationYear="2024">
       <firstname>HHH</firstname>
       <lastname>HAndry</lastname>
@@ -1371,7 +1368,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="I23131093" registrationYear="2024">
       <firstname>III</firstname>
       <lastname>Indry</lastname>
@@ -1406,7 +1403,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="J23131093" registrationYear="2024">
       <firstname>JJJ</firstname>
       <lastname>JAndry</lastname>
@@ -1441,7 +1438,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="K23131093" registrationYear="2024">
       <firstname>KKK</firstname>
       <lastname>KAndry</lastname>
@@ -1476,7 +1473,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="L23131093" registrationYear="2024">
       <firstname>LLL</firstname>
       <lastname>LAndry</lastname>
@@ -1511,7 +1508,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="M23131093" registrationYear="2024">
       <firstname>MMM</firstname>
       <lastname>MAndry</lastname>
@@ -1546,7 +1543,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="N23131093" registrationYear="2024">
       <firstname>NNN</firstname>
       <lastname>NNndry</lastname>
@@ -1581,7 +1578,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="O23131093" registrationYear="2024">
       <firstname>O</firstname>
       <lastname>Ondry</lastname>
@@ -1616,7 +1613,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="P23131093" registrationYear="2024">
       <firstname>PPP</firstname>
       <lastname>PPndry</lastname>
@@ -1651,7 +1648,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="Q23131093" registrationYear="2024">
       <firstname>Q</firstname>
       <lastname>Qndry</lastname>
@@ -1686,7 +1683,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="R23131093" registrationYear="2024">
       <firstname>RR</firstname>
       <lastname>RAndry</lastname>
@@ -1721,7 +1718,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="S23131093" registrationYear="2024">
       <firstname>SSS</firstname>
       <lastname>SSSndry</lastname>
@@ -1756,7 +1753,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="T23131093" registrationYear="2024">
       <firstname>TTT</firstname>
       <lastname>TTAndry</lastname>
@@ -1791,7 +1788,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="U23131093" registrationYear="2024">
       <firstname>UU</firstname>
       <lastname>Undry</lastname>
@@ -1826,7 +1823,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="V23131093" registrationYear="2024">
       <firstname>VV</firstname>
       <lastname>VAVndry</lastname>
@@ -1861,7 +1858,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>WWW</firstname>
       <lastname>WWndry</lastname>
@@ -1896,7 +1893,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>XX</firstname>
       <lastname>XXAndry</lastname>
@@ -1931,7 +1928,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>YYYY</firstname>
       <lastname>Yndry</lastname>
@@ -1966,7 +1963,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131093" registrationYear="2024">
       <firstname>ZZZZZ</firstname>
       <lastname>ZZndry</lastname>
@@ -2001,9 +1998,8 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-  
   <!-- NEWWWWWASSS -->
-   <student>
+  <student>
     <author sex="H" codeApogee="A23131091" registrationYear="2024">
       <firstname>AAA</firstname>
       <lastname>Andry</lastname>
@@ -2038,7 +2034,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="B23131091" registrationYear="2024">
       <firstname>BBB</firstname>
       <lastname>Bandry</lastname>
@@ -2073,7 +2069,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="C23131091" registrationYear="2024">
       <firstname>CCC</firstname>
       <lastname>Cndry</lastname>
@@ -2108,7 +2104,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="D23131091" registrationYear="2024">
       <firstname>DDD</firstname>
       <lastname>Dndry</lastname>
@@ -2143,7 +2139,7 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
-   <student>
+  <student>
     <author sex="H" codeApogee="E23131091" registrationYear="2024">
       <firstname>EEE</firstname>
       <lastname>Endry</lastname>
@@ -2176,6 +2172,41 @@
       <lastname>B</lastname>
       <mail>B@cru.mg</mail>
       <institution>B</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="H" codeApogee="23131093" registrationYear="2024">
+      <firstname>A-Triple</firstname>
+      <lastname>AAA</lastname>
+      <birth>1999-07-29</birth>
+    </author>
+    <title>AAA</title>
+    <abstract>AAA</abstract>
+    <keywords>AAA</keywords>
+    <disciplines>Bio</disciplines>
+    <speciality>AAA</speciality>
+    <theme>T5</theme>
+    <institution>E</institution>
+    <structure type="group">AAA</structure>
+    <mail>
+      <mail type="institutionnel">a@gmail.com</mail>
+      <mail type="autre">a@gmail.com</mail>
+    </mail>
+    <phone>0645789865</phone>
+    <address>
+      <ville>AAAA</ville>
+    </address>
+    <supervisor>
+      <firstname>A</firstname>
+      <lastname>A</lastname>
+      <mail>a@gmail.com</mail>
+      <institution>E</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>A</firstname>
+      <lastname>A</lastname>
+      <mail>a@gmail.com</mail>
+      <institution>E</institution>
     </cosupervisor>
   </student>
 </submission>

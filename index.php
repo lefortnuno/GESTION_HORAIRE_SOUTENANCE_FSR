@@ -20,7 +20,6 @@ if (!empty ($_SESSION["codeApogee"])) {
     <link rel="stylesheet" type="text/css" href="files/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="files/css/nav.css">
     <style>
-        /* Définir la classe personnalisée pour le titre h1 */
         .custom-h1 {
             font-family: 'Open Sans', sans-serif;
             font-weight: 600;
@@ -73,42 +72,50 @@ if (!empty ($_SESSION["codeApogee"])) {
                         <th>Téléphone</th>
                         <!-- <th> </th> -->
                     </thead>
-
                     <tbody>
                         <?php
-                        // Chargement des fichers xml 
+                        // Chargement du fichier XML
                         $file = simplexml_load_file('files/xml/doctorants.xml');
 
+                        $found = false; // Indicateur pour savoir si le code Apogée a été trouvé
+                        
                         foreach ($file->student as $row) {
+                            if ($row->author['codeApogee'] == $codeApogee) {
+                                $found = true; // Le code Apogée a été trouvé
+                                ?>
+                                <tr>
+                                    <td>
+                                        <?php echo $row->author['codeApogee']; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $row->author->firstname . ' ' . $row->author->lastname; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $row->theme; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $row->phone; ?>
+                                    </td>
+                                    <!-- Ajoutez ici les modalités d'édition et de suppression -->
+                                    <?php include ('modals/edit_delete_modal.php'); ?>
+                                </tr>
+                                <?php
+                            }
+                        }
+
+                        // Si le code Apogée n'a pas été trouvé, afficher un message
+                        if (!$found) {
                             ?>
                             <tr>
-                                <td>
-                                    <?php echo $row->author['codeApogee']; ?>
+                                <td colspan="4" class="text-center">
+                                    Finalisez votre enregistrement en cliquant sur votre Nom !
                                 </td>
-                                <td>
-                                    <?php echo $row->author->firstname; ?>
-                                    <?php echo $row->author->lastname; ?>
-                                </td>
-                                <td>
-                                    <?php echo $row->theme; ?>
-                                </td>
-                                <td>
-                                    <?php echo $row->phone; ?>
-                                </td>
-                                <!-- <td>
-                                    <a href="#edit_<?php echo $row->codeApogee; ?>" data-toggle="modal" class="btn btn-success btn-sm"><span
-                                        class="glyphicon glyphicon-edit"></span>
-                                    Modifier </a>
-                                <a href="#delete_<?php echo $row->codeApogee; ?>" data-toggle="modal" class="btn btn-danger btn-sm"><span
-                                        class="glyphicon glyphicon-trash"></span>
-                                    Supprimer</a>
-                                </td> -->
-                                <?php include ('modals/edit_delete_modal.php'); ?>
                             </tr>
                             <?php
                         }
                         ?>
                     </tbody>
+
                 </table>
             </div>
         </div>
@@ -116,7 +123,8 @@ if (!empty ($_SESSION["codeApogee"])) {
 
     <?php include ('modals/add_modal.php'); ?>
 
-    <script src="files/js/jquery.min.js"></script>
+    <script src=" files/js/jquery.min.js">
+    </script>
     <script src="files/bootstrap/js/bootstrap.min.js"></script>
 
 </body>

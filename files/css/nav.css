@@ -8,7 +8,7 @@ nav {
     left: 0;
     right: 0;
     top: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 0 5%;
     height: 65px;
     background-color: #1b1b1b;
@@ -89,7 +89,7 @@ nav .icon-burger .line {
     background-color: #fff;
     margin: 5px;
     border-radius: 3px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 768px) {
@@ -111,10 +111,10 @@ nav .icon-burger .line {
         height: auto;
         flex-direction: column;
         justify-content: space-evenly;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0, 0, 0, 0.8);
         overflow: hidden;
         box-sizing: border-box;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     nav .links a {
@@ -140,5 +140,4 @@ nav .icon-burger .line {
     nav :checked~.icon-burger .line:nth-child(2) {
         opacity: 0;
     }
-
 }

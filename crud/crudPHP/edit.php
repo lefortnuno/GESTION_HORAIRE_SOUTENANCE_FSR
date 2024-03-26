@@ -2,8 +2,6 @@
 // Inclure votre fichier de connexion à la base de données
 require_once '../../config/config.php';
 if (isset ($_POST['edit'])) {
-
-
     // Récupérez l'ID de la session
     $codeApogee = $_SESSION["codeApogee"];
 
@@ -50,7 +48,7 @@ if (isset ($_POST['edit'])) {
     $registrationYear = date('Y');
 
     // Requête pour mettre à jour les informations de l'utilisateur dans la base de données
-    $sql_update = "UPDATE tb_user SET nom = ?, prenom = ?, email = ? WHERE codeApogee = ?;";
+    $sql_update = "UPDATE tb_user SET conf = 1, nom = ?, prenom = ?, email = ? WHERE codeApogee = ?;";
     $stmt_update = $conn->prepare($sql_update);
     $stmt_update->bind_param("sssi", $nom, $prenom, $email, $codeApogee);
     $stmt_update->execute();

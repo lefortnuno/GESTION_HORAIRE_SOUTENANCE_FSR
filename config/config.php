@@ -22,30 +22,11 @@ mysqli_select_db($conn, "fsr_bdd");
 $create_table_query = "CREATE TABLE IF NOT EXISTS tb_user ( 
     codeApogee INT(11) NOT NULL PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
-    prenom VARCHAR(200),
-    dateNaiss DATE,
-    sexe BOOLEAN DEFAULT NULL,
-    numTel VARCHAR(15) NOT NULL,
+    prenom VARCHAR(200), 
     adresse VARCHAR(200) NOT NULL,
     email VARCHAR(200) NOT NULL,
-    mdp VARCHAR(250) NOT NULL,
-    titre VARCHAR(100),
-    theme VARCHAR(100),
-    abstract VARCHAR(200),
-    keywords VARCHAR(100),
-    discipline VARCHAR(100),
-    specialite VARCHAR(100),
-    institution VARCHAR(100),
-    structure VARCHAR(100),
-    nomSup VARCHAR(100),
-    prenomSup VARCHAR(100),
-    emailSup VARCHAR(150),
-    institutionSup VARCHAR(100),
-    nomCoSup VARCHAR(100),
-    prenomCoSup VARCHAR(100),
-    emailCoSup VARCHAR(150),
-    institutionCoSup VARCHAR(100),
-    validation BOOLEAN DEFAULT 0
+    mdp VARCHAR(250) NOT NULL, 
+    conf BOOLEAN DEFAULT 0
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1";
 
 if (!mysqli_query($conn, $create_table_query)) {

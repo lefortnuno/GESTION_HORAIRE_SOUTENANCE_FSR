@@ -4,10 +4,21 @@
     <div class="logo"> <strong> <a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/index.php">FSR</a>
         </strong></div>
     <ul class="links">
-        <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/pages/etudiant/formulaire.php">
-                <?php echo $row["nom"]; ?>
-            </a></li>
+        <?php if ($row["conf"] == 0) { ?>
+            <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/pages/etudiant/formulaire.php">
+                    <?php echo $row["nom"]; ?>
+                </a></li>
+            <?php
+        } else {
+            ?>
+            <li><a style="text-decoration-line: line-through;"
+                    href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/index.php">
+                    <?php echo $row["nom"]; ?>
+                </a></li>
+            <?php
+        } ?>
         <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/pages/etudiant/planning.php">Planning</a>
+        <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/pages/xsltPage/planning.php">P.XSLT</a>
         </li>
         <li><a href="#projects"> </a></li>
         <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/auth/logout.php">Déconnexion</a></li>

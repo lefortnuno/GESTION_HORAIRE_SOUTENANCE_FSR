@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `tb_user`(
     prenomCoSup varchar(100),
     emailCoSup varchar(150),
     institutionCoSup varchar(100),
-    validation BOOLEAN DEFAULT 0,
+    conf BOOLEAN DEFAULT 0,
     PRIMARY KEY(id)
 )ENGINE = MyISAM DEFAULT CHARSET = latin1;
 

@@ -1,7 +1,13 @@
-<!-- AFFICHAGE AVEC TRI ET PAGINATION -->
-<!-- REGLAGE DE BUG DE L'HORAIRE A PARTIR DU 19IEM ETUDIANT -->
-
 <?php
+require '../../config/config.php';
+
+if (!empty ($_SESSION["codeApogee"])) {
+    $codeApogee = $_SESSION["codeApogee"];
+    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = $codeApogee");
+    $row = mysqli_fetch_assoc($result);
+} else {
+    header("Location: auth/login.php");
+}
 // Charger les données existantes depuis le fichier XML
 $xml = simplexml_load_file('../../files/xml/doctorants.xml');
 
@@ -96,13 +102,23 @@ foreach ($students as $student) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planning des soutenances</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../files/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../files/css/nav.css">
+    <style>
+        .custom-h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+        }
+    </style>
 </head>
 
 <body>
+    <?php
+    include ('../header/navbar.php');
+    ?>
 
     <div class="container">
-        <h2 class="mt-5 mb-4">Planning des soutenances</h2>
+        <h1 class="page-header text-center custom-h1 mt-5 mb-4">Planning des soutenances</h1>
         <table class="table">
             <thead>
                 <tr>
@@ -151,22 +167,25 @@ foreach ($students as $student) {
         </table>
 
         <!-- Pagination -->
-        <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
+        <div aria-label="Page navigation example">
+            <ul class="pagination justify-content-center"
+                style="display: flex; justify-content: center; align-items: center;">
                 <li class="page-item <?= $currentPage == 1 ? 'disabled' : '' ?>">
-                    <a class="page-link" href="?page=<?= $currentPage - 1 ?>" tabindex="-1">Précédent</a>
+                    <a class="page-link" href="?page=<?= max(1, $currentPage - 1) ?>" tabindex="-1">Précédent</a>
                 </li>
-                <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                <?php for ($i = max(1, $currentPage - 2); $i <= min($totalPages, $currentPage + 2); $i++): ?>
                     <li class="page-item <?= $currentPage == $i ? 'active' : '' ?>"><a class="page-link"
                             href="?page=<?= $i ?>">
                             <?= $i ?>
                         </a></li>
                 <?php endfor; ?>
                 <li class="page-item <?= $currentPage == $totalPages ? 'disabled' : '' ?>">
-                    <a class="page-link" href="?page=<?= $currentPage + 1 ?>">Suivant</a>
+                    <a class="page-link" href="?page=<?= min($totalPages, $currentPage + 1) ?>">Suivant</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+
+
     </div>
 
 </body>
