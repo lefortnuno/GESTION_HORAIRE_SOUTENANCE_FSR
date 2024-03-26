@@ -1,3 +1,5 @@
+<!-- AFFICHAGE AVEC TRI -->
+
 <?php
 // Charger les données existantes depuis le fichier XML
 $xml = simplexml_load_file('../../files/xml/doctorants.xml');

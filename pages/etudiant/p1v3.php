@@ -1,15 +1,35 @@
-<!-- AFFICHAGE SIMPLE -->
+<!-- AFFICHAGE AVEC TRI ET PAGINATION -->
 
 <?php
 // Charger les données existantes depuis le fichier XML
 $xml = simplexml_load_file('../../files/xml/doctorants.xml');
+
+// Créer un tableau pour stocker les informations sur les étudiants
+$students = array();
+
+// Parcourir chaque étudiant dans le XML et stocker ses informations dans le tableau
+foreach ($xml->student as $student) {
+    $students[] = array(
+        'nom' => (string) $student->author->firstname . ' ' . (string) $student->author->lastname,
+        'codeApogee' => (string) $student->author['codeApogee'],
+        'theme' => (string) $student->theme,
+        'disciplines' => 'Salle ' . (string) $student->disciplines
+    );
+}
+
+// Trier les étudiants par nom
+// Trier les étudiants par nom (insensible à la casse)
+usort($students, function ($a, $b) {
+    return strcasecmp($a['nom'], $b['nom']);
+});
+
 
 // Définir les horaires de soutenance et de pause
 $soutenance_time = strtotime('09:00'); // Heure de début de la soutenance à 9h00
 $pause_time = 20 * 60; // Durée de la pause entre chaque soutenance en secondes (20 minutes)
 $dejeuner_start_time = strtotime('11:20'); // Heure de début du déjeuner à 11h20
 $dejeuner_end_time = strtotime('14:00'); // Heure de fin du déjeuner à 14h00
-$fin_journee = strtotime('16:30'); // Heure de fin de la journée à 16h30
+$fin_journee = strtotime('16:20'); // Heure de fin de la journée à 16h30
 
 // Initialiser un tableau pour stocker les informations sur les soutenances
 $soutenance_schedule = array();
@@ -17,31 +37,31 @@ $soutenance_schedule = array();
 // Initialiser un compteur pour suivre le nombre d'étudiants soutenus
 $student_count = 0;
 
-// Parcourir chaque étudiant dans le XML
-foreach ($xml->student as $student) {
+// Parcourir chaque étudiant trié par nom et générer les dates et horaires de soutenance
+foreach ($students as $student) {
     // Vérifier si c'est toujours pendant les heures de travail
-    if (date('H:i', $soutenance_time) > '16:30') {
+    if ($soutenance_time > $fin_journee) {
         // Si c'est après 16h30, reporter la soutenance au lendemain à 9h00
         $soutenance_time = strtotime('+1 day', strtotime(date('Y-m-d', $soutenance_time))) + strtotime('09:00') - strtotime('00:00');
     }
-
-    // Incrémenter le compteur d'étudiants soutenus
-    $student_count++;
 
     // Ajouter les informations de l'étudiant au tableau de planification des soutenances
     $soutenance_schedule[] = array(
         'date' => date('Y-m-d', $soutenance_time),
         'heure_debut' => date('H:i', $soutenance_time),
         'heure_fin' => date('H:i', $soutenance_time + (20 * 60)), // Heure de fin de la soutenance
-        'codeApogee' => (string) $student->author['codeApogee'],
-        'nom' => (string) $student->author->firstname . ' ' . (string) $student->author->lastname,
-        'theme' => (string) $student->theme,
-        'disciplines' => 'Salle ' . (string) $student->disciplines
+        'codeApogee' => $student['codeApogee'],
+        'nom' => $student['nom'],
+        'theme' => $student['theme'],
+        'disciplines' => $student['disciplines']
     );
 
+    // Incrémenter le compteur d'étudiants soutenus
+    $student_count++;
+
     // Vérifier si c'est le moment de faire une pause
-    if ($student_count % 3 == 0 && $student_count != count($xml->student)) {
-        // Ajouter une pause dans le tableau de planification des soutenances
+    if ($student_count % 3 == 0 && $student_count != count($students)) {
+        // Ajouter une pause dans le tableau de planification des soutenances 
         $soutenance_schedule[] = array(
             'date' => 'PAUSE',
             'heure_debut' => '',
@@ -93,7 +113,16 @@ foreach ($xml->student as $student) {
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($soutenance_schedule as $item): ?>
+                <?php
+                $perPage = 8; // Nombre d'éléments par page
+                $totalPages = ceil(count($soutenance_schedule) / $perPage); // Calcul du nombre total de pages
+                $currentPage = isset ($_GET['page']) ? $_GET['page'] : 1; // Page actuelle
+                $startIndex = ($currentPage - 1) * $perPage; // Indice de départ pour cette page
+                $endIndex = $startIndex + $perPage; // Indice de fin pour cette page
+                $slicedSchedule = array_slice($soutenance_schedule, $startIndex, $perPage); // Extraire les éléments pour cette page
+                
+                foreach ($slicedSchedule as $item):
+                    ?>
                     <tr>
                         <td>
                             <?= $item['date'] ?>
@@ -118,6 +147,24 @@ foreach ($xml->student as $student) {
                 <?php endforeach; ?>
             </tbody>
         </table>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item <?= $currentPage == 1 ? 'disabled' : '' ?>">
+                    <a class="page-link" href="?page=<?= $currentPage - 1 ?>" tabindex="-1">Précédent</a>
+                </li>
+                <?php for ($i = 1; $i <= $totalPages; $i++): ?>
+                    <li class="page-item <?= $currentPage == $i ? 'active' : '' ?>"><a class="page-link"
+                            href="?page=<?= $i ?>">
+                            <?= $i ?>
+                        </a></li>
+                <?php endfor; ?>
+                <li class="page-item <?= $currentPage == $totalPages ? 'disabled' : '' ?>">
+                    <a class="page-link" href="?page=<?= $currentPage + 1 ?>">Suivant</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 
 </body>
