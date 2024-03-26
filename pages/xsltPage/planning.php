@@ -1,18 +1,25 @@
 <?php
-// Chargement du XML et de la feuille de style XSLT
+// Charger le fichier XML
 $xml = new DOMDocument();
-$xml->load('../../files/xml/doctorants.xml');
+if (!$xml->load('../../files/xml/doctorants.xml')) {
+    die ('Erreur lors du chargement du fichier XML');
+}
 
+// Charger le fichier XSLT
 $xsl = new DOMDocument();
-$xsl->load('../../files/xslt/transform.xslt');
+if (!$xsl->load('../../files/xslt/transform.xslt')) {
+    die ('Erreur lors du chargement du fichier XSLT');
+}
+// Créer un processeur XSLT
+$proc = new XSLTProcessor();
 
-// Création du processeur XSLT
-$xsltProcessor = new XSLTProcessor();
-$xsltProcessor->importStylesheet($xsl);
+// Attacher la feuille de style XSLT
+if (!$proc->importStyleSheet($xsl)) {
+    die ('Erreur lors de l\'importation de la feuille de style XSLT');
+}
+// Transformer le document XML
+$result = $proc->transformToXML($xml);
 
-// Application de la transformation
-$html = $xsltProcessor->transformToXML($xml);
+echo $result;
 
-// Affichage du résultat HTML
-echo $html;
 ?>
