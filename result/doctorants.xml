@@ -4638,7 +4638,7 @@
     <keywords>AKONDRO</keywords>
     <disciplines>Pharmacologie</disciplines>
     <speciality>G&#xE9;nomique et Bioinformatique</speciality>
-    <theme>&#xE9;cologie Industrielle</theme>
+    <theme>&#xC9;cologie Industrielle</theme>
     <institution>FSR</institution>
     <structure type="group">XRCTFVYGBHNJ</structure>
     <mail>
@@ -4730,6 +4730,41 @@
       <lastname>A</lastname>
       <mail>a12@gmail.com</mail>
       <institution>FSR</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="F" codeApogee="21" registrationYear="2024">
+      <firstname>TESTE FINALE</firstname>
+      <lastname/>
+      <birth>2002-02-21</birth>
+    </author>
+    <title>TTT</title>
+    <abstract>TTT</abstract>
+    <keywords>TTT</keywords>
+    <disciplines>&#xC9;lectronique</disciplines>
+    <speciality>&#xC9;lectronique de Puissance</speciality>
+    <theme>Agriculture Durable</theme>
+    <institution>UH1</institution>
+    <structure type="group">TTT</structure>
+    <mail>
+      <mail type="institutionnel">t21@gmail.com</mail>
+      <mail type="autre">t21@gmail.com</mail>
+    </mail>
+    <phone>0345560606</phone>
+    <address>
+      <ville>RABAT VILLE</ville>
+    </address>
+    <supervisor>
+      <firstname>TTT</firstname>
+      <lastname>TTT</lastname>
+      <mail>t21@gmail.com</mail>
+      <institution>UH1</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>TTT</firstname>
+      <lastname>TTT</lastname>
+      <mail>t21@gmail.com</mail>
+      <institution>ENSIAS</institution>
     </cosupervisor>
   </student>
 </submission>

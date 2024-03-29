@@ -94,8 +94,7 @@ if (isset($_POST["submit"])) {
 
                         <div class="input-field">
                             <label>Prénom</label>
-                            <input type="text" placeholder="Entrez votre Prénom" name="prenom" id="prenom" value=""
-                                required>
+                            <input type="text" placeholder="Entrez votre Prénom" name="prenom" id="prenom" value="">
                         </div>
 
                         <div class="input-field">
