@@ -1,4 +1,15 @@
 <!-- navbar.php -->
+<?php
+// require 'config/config.php';
+
+if (!empty($_SESSION["codeApogee"])) {
+    $codeApogee = $_SESSION["codeApogee"];
+    $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = $codeApogee");
+    $row = mysqli_fetch_assoc($result);
+} else {
+    header("Location: auth/codeApogee.php");
+}
+?>
 <nav>
     <input id="nav-toggle" type="checkbox">
     <div class="logo"> <strong> <a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/index.php">FSR</a>

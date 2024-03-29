@@ -4453,7 +4453,7 @@
     </cosupervisor>
   </student>
   <student>
-    <author sex="F" codeApogee="12" registrationYear="2024">
+    <author sex="F" codeApogee="12A" registrationYear="2024">
       <firstname>AAAA</firstname>
       <lastname>AAAA</lastname>
       <birth>2012-12-12</birth>
@@ -4485,6 +4485,41 @@
       <lastname>A12</lastname>
       <mail>a12@gmail.com</mail>
       <institution>A</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="H" codeApogee="45625697" registrationYear="2024">
+      <firstname>b</firstname>
+      <lastname>b</lastname>
+      <birth>1212-12-12</birth>
+    </author>
+    <title>b</title>
+    <abstract>b</abstract>
+    <keywords>b</keywords>
+    <disciplines>Bio</disciplines>
+    <speciality>b</speciality>
+    <theme>T1</theme>
+    <institution>B</institution>
+    <structure type="group">b</structure>
+    <mail>
+      <mail type="institutionnel">b@gmail.com</mail>
+      <mail type="autre">b@gmail.com</mail>
+    </mail>
+    <phone>4545545</phone>
+    <address>
+      <ville>b</ville>
+    </address>
+    <supervisor>
+      <firstname>b</firstname>
+      <lastname>b</lastname>
+      <mail>b@gmail.com</mail>
+      <institution>B</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>b</firstname>
+      <lastname>b</lastname>
+      <mail>b@gmail.com</mail>
+      <institution>B</institution>
     </cosupervisor>
   </student>
 </submission>

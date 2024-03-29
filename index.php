@@ -8,6 +8,43 @@ if (!empty($_SESSION["codeApogee"])) {
 } else {
     header("Location: auth/codeApogee.php");
 }
+
+// Recherche de la date de soutenance et de l'heure de soutenance pour un codeApogee  
+$html = file_get_contents('result/index.html');
+$codeApogeeRecherche = $codeApogee;
+$dateSoutenance = '';
+$heureSoutenance = '';
+
+// Utilisation de la classe DOMDocument pour analyser le code HTML
+$dom = new DOMDocument();
+$dom->loadHTML($html);
+
+// Récupération de tous les éléments de table
+$tables = $dom->getElementsByTagName('table');
+
+// Parcourir toutes les tables pour rechercher le codeApogee
+foreach ($tables as $table) {
+    // Récupérer les lignes de la table
+    $rows = $table->getElementsByTagName('tr');
+
+    // Parcourir chaque ligne pour rechercher le codeApogee
+    foreach ($rows as $row) {
+        // Récupérer les colonnes de la ligne
+        $columns = $row->getElementsByTagName('td');
+
+        // Vérifier si la première colonne contient le codeApogee recherché
+        if ($columns->length > 0) {
+            $codeApogeeColonne = $columns->item(0)->nodeValue;
+            // echo "Code Apogée de la colonne: $codeApogeeColonne <br>"; // Afficher le contenu de la colonne pour déboguer
+            if ($codeApogeeColonne == $codeApogeeRecherche) {
+                $dateSoutenance = $columns->item(3)->nodeValue;
+                $heureSoutenance = $columns->item(4)->nodeValue;
+                break 2;
+            }
+        }
+    }
+
+}
 ?>
 
 <!DOCTYPE html>
@@ -95,10 +132,10 @@ if (!empty($_SESSION["codeApogee"])) {
                                         <?php echo $row->phone; ?>
                                     </td>
                                     <td>
-                                        <?php echo $row->theme; ?>
+                                        <?php echo $dateSoutenance; ?>
                                     </td>
                                     <td>
-                                        <?php echo $row->phone; ?>
+                                        <?php echo $heureSoutenance; ?>
                                     </td>
                                 </tr>
                                 <?php
