@@ -4522,4 +4522,74 @@
       <institution>B</institution>
     </cosupervisor>
   </student>
+  <student>
+    <author sex="F" codeApogee="75335789" registrationYear="2024">
+      <firstname>CLOE</firstname>
+      <lastname>Davoane</lastname>
+      <birth>2000-03-25</birth>
+    </author>
+    <title>Cellule Morte</title>
+    <abstract>C</abstract>
+    <keywords>C</keywords>
+    <disciplines>Chime</disciplines>
+    <speciality>C</speciality>
+    <theme>T4</theme>
+    <institution>C</institution>
+    <structure type="group">C</structure>
+    <mail>
+      <mail type="institutionnel">cloedavoane@gmail.com</mail>
+      <mail type="autre">cloedavoane@gmail.com</mail>
+    </mail>
+    <phone>0352436875</phone>
+    <address>
+      <ville>RABAT</ville>
+    </address>
+    <supervisor>
+      <firstname>C</firstname>
+      <lastname>C</lastname>
+      <mail>cloedavoane@gmail.com</mail>
+      <institution>A</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>C</firstname>
+      <lastname>C</lastname>
+      <mail>cloedavoane@gmail.com</mail>
+      <institution>C</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="H" codeApogee="75335700" registrationYear="2024">
+      <firstname>DAO</firstname>
+      <lastname>Dong</lastname>
+      <birth>2000-05-04</birth>
+    </author>
+    <title>DEAD</title>
+    <abstract>DEATH</abstract>
+    <keywords>DEATH; DEAD</keywords>
+    <disciplines>Bio</disciplines>
+    <speciality>D</speciality>
+    <theme>T5</theme>
+    <institution>D</institution>
+    <structure type="group">D</structure>
+    <mail>
+      <mail type="institutionnel">d@gmail.com</mail>
+      <mail type="autre">d@gmail.com</mail>
+    </mail>
+    <phone>0645896532</phone>
+    <address>
+      <ville>d</ville>
+    </address>
+    <supervisor>
+      <firstname>D</firstname>
+      <lastname>D</lastname>
+      <mail>d@gmail.com</mail>
+      <institution>D</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>D</firstname>
+      <lastname>D</lastname>
+      <mail>d@gmail.com</mail>
+      <institution>D</institution>
+    </cosupervisor>
+  </student>
 </submission>
