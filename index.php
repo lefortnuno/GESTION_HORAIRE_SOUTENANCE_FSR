@@ -53,7 +53,7 @@ foreach ($tables as $table) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>FSR</title>
     <link rel="stylesheet" type="text/css" href="files/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="files/css/nav.css">
     <style>

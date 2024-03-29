@@ -4592,4 +4592,39 @@
       <institution>D</institution>
     </cosupervisor>
   </student>
+  <student>
+    <author sex="F" codeApogee="13" registrationYear="2024">
+      <firstname>b13</firstname>
+      <lastname/>
+      <birth>1999-12-13</birth>
+    </author>
+    <title>B13</title>
+    <abstract>B13</abstract>
+    <keywords>B13</keywords>
+    <disciplines>Info</disciplines>
+    <speciality>B</speciality>
+    <theme>T3</theme>
+    <institution>E</institution>
+    <structure type="group">B</structure>
+    <mail>
+      <mail type="institutionnel">b13@gmail.com</mail>
+      <mail type="autre">b13@gmail.com</mail>
+    </mail>
+    <phone>0613</phone>
+    <address>
+      <ville>b13</ville>
+    </address>
+    <supervisor>
+      <firstname>B</firstname>
+      <lastname>B</lastname>
+      <mail>b13@gmail.com</mail>
+      <institution>E</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>B</firstname>
+      <lastname>B</lastname>
+      <mail>b13@gmail.com</mail>
+      <institution>E</institution>
+    </cosupervisor>
+  </student>
 </submission>

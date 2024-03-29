@@ -16,7 +16,7 @@ if (!empty($_SESSION["codeApogee"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Validation</title>
     <link rel="stylesheet" type="text/css" href="../../files/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../files/css/nav.css">
     <link rel="stylesheet" type="text/css" href="../../files/css/form.css">
@@ -24,22 +24,18 @@ if (!empty($_SESSION["codeApogee"])) {
 
 <body>
 
-
     <?php
     include ('../header/navbar.php');
     ?>
 
     <div class="container">
-        <!-- <h1 class="page-header text-cEntrez votre">ETUDIANT EN DOCTORAT</h1> -->
         <div class="row">
-            <!-- <div class="col-lg-12 col-lg-offset-2">  -->
             <div class="">
-                <!-- Mes message d'alert et de notification -->
+
                 <?php
-                // session_start();
                 if (isset($_SESSION['message'])) {
                     ?>
-                    <div class="alert alert-success text-cEntrez votre" style="margin-top:20px;">
+                    <div class="alert alert-success text-center" style="margin-top:20px;">
                         <?php echo $_SESSION['message']; ?>
                     </div>
                     <?php
@@ -49,7 +45,7 @@ if (!empty($_SESSION["codeApogee"])) {
 
                 if (isset($_SESSION['errorMessage'])) {
                     ?>
-                    <div class="alert alert-danger text-cEntrez votre" style="margin-top:20px;">
+                    <div class="alert alert-danger text-center" style="margin-top:20px;">
                         <?php echo $_SESSION['errorMessage']; ?>
                     </div>
                     <?php
@@ -84,8 +80,8 @@ if (!empty($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Prénom</label>
-                                        <input required type="text" placeholder="Entrez votre prénom" name="prenom"
-                                            id="prenom" value="<?php echo $row['prenom']; ?>">
+                                        <input type="text" placeholder="Entrez votre prénom" name="prenom" id="prenom"
+                                            value="<?php echo $row['prenom']; ?>">
                                     </div>
 
                                     <div class="input-field">
