@@ -10,7 +10,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -45,7 +45,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -80,7 +80,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -115,7 +115,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -220,7 +220,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -255,7 +255,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -290,7 +290,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -395,7 +395,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -430,7 +430,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -465,7 +465,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -535,7 +535,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -605,7 +605,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -640,7 +640,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -675,7 +675,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -710,7 +710,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -745,7 +745,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -780,7 +780,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -815,7 +815,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -921,7 +921,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -956,7 +956,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -991,7 +991,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -1026,7 +1026,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -1097,7 +1097,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -1132,7 +1132,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -1167,7 +1167,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -1202,7 +1202,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -1307,7 +1307,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -1342,7 +1342,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -1377,7 +1377,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -1482,7 +1482,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -1517,7 +1517,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -1552,7 +1552,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -1622,7 +1622,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -1692,7 +1692,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -1727,7 +1727,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -1762,7 +1762,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -1797,7 +1797,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -1832,7 +1832,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -1867,7 +1867,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -1902,7 +1902,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -2008,7 +2008,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -2043,7 +2043,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -2078,7 +2078,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -2113,7 +2113,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -2183,7 +2183,7 @@
     <title>AAA</title>
     <abstract>AAA</abstract>
     <keywords>AAA</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>AAA</speciality>
     <theme>T5</theme>
     <institution>E</institution>
@@ -2218,7 +2218,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -2253,7 +2253,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -2288,7 +2288,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -2323,7 +2323,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -2428,7 +2428,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -2463,7 +2463,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -2498,7 +2498,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -2603,7 +2603,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -2638,7 +2638,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -2673,7 +2673,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -2743,7 +2743,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -2813,7 +2813,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -2848,7 +2848,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -2883,7 +2883,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -2918,7 +2918,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -2953,7 +2953,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -2988,7 +2988,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -3023,7 +3023,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -3129,7 +3129,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -3164,7 +3164,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -3199,7 +3199,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -3234,7 +3234,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -3305,7 +3305,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -3340,7 +3340,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -3375,7 +3375,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -3410,7 +3410,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -3515,7 +3515,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -3550,7 +3550,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -3585,7 +3585,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -3690,7 +3690,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -3725,7 +3725,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -3760,7 +3760,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -3830,7 +3830,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -3900,7 +3900,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -3935,7 +3935,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -3970,7 +3970,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Math</disciplines>
+    <disciplines>Math&#xE9;matiques</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -4005,7 +4005,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -4040,7 +4040,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -4075,7 +4075,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -4110,7 +4110,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -4216,7 +4216,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -4251,7 +4251,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>A</speciality>
     <theme>T2</theme>
     <institution>A</institution>
@@ -4286,7 +4286,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>A</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -4321,7 +4321,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -4391,7 +4391,7 @@
     <title>AAA</title>
     <abstract>AAA</abstract>
     <keywords>AAA</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>AAA</speciality>
     <theme>T5</theme>
     <institution>E</institution>
@@ -4418,7 +4418,7 @@
     </cosupervisor>
   </student>
   <student>
-    <author sex="F" codeApogee="12" registrationYear="2024">
+    <author sex="F" codeApogee="87512" registrationYear="2024">
       <firstname>a12</firstname>
       <lastname>a12</lastname>
       <birth>2012-12-12</birth>
@@ -4426,7 +4426,7 @@
     <title>A12</title>
     <abstract>A12 a</abstract>
     <keywords>A12</keywords>
-    <disciplines>G&#xE9;o</disciplines>
+    <disciplines>G&#xE9;ologie</disciplines>
     <speciality>A12</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -4461,7 +4461,7 @@
     <title>A12</title>
     <abstract>A12</abstract>
     <keywords>A12</keywords>
-    <disciplines>Physique</disciplines>
+    <disciplines>Agroalimentaire</disciplines>
     <speciality>A12</speciality>
     <theme>T3</theme>
     <institution>A</institution>
@@ -4496,7 +4496,7 @@
     <title>b</title>
     <abstract>b</abstract>
     <keywords>b</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>b</speciality>
     <theme>T1</theme>
     <institution>B</institution>
@@ -4531,7 +4531,7 @@
     <title>Cellule Morte</title>
     <abstract>C</abstract>
     <keywords>C</keywords>
-    <disciplines>Chime</disciplines>
+    <disciplines>Chimie</disciplines>
     <speciality>C</speciality>
     <theme>T4</theme>
     <institution>C</institution>
@@ -4566,7 +4566,7 @@
     <title>DEAD</title>
     <abstract>DEATH</abstract>
     <keywords>DEATH; DEAD</keywords>
-    <disciplines>Bio</disciplines>
+    <disciplines>Biologie</disciplines>
     <speciality>D</speciality>
     <theme>T5</theme>
     <institution>D</institution>
@@ -4601,7 +4601,7 @@
     <title>B13</title>
     <abstract>B13</abstract>
     <keywords>B13</keywords>
-    <disciplines>Info</disciplines>
+    <disciplines>Informatique</disciplines>
     <speciality>B</speciality>
     <theme>T3</theme>
     <institution>E</institution>
@@ -4628,7 +4628,7 @@
     </cosupervisor>
   </student>
   <student>
-    <author sex="F" codeApogee="12" registrationYear="2024">
+    <author sex="F" codeApogee="91203240" registrationYear="2024">
       <firstname>AKONDRO</firstname>
       <lastname>Manta</lastname>
       <birth>2006-05-12</birth>
@@ -4636,9 +4636,9 @@
     <title>AKONDRO MANTA OH</title>
     <abstract>TSY MISY</abstract>
     <keywords>AKONDRO</keywords>
-    <disciplines>Biologie</disciplines>
+    <disciplines>Pharmacologie</disciplines>
     <speciality>G&#xE9;nomique et Bioinformatique</speciality>
-    <theme/>
+    <theme>&#xE9;cologie Industrielle</theme>
     <institution>FSR</institution>
     <structure type="group">XRCTFVYGBHNJ</structure>
     <mail>
@@ -4663,7 +4663,42 @@
     </cosupervisor>
   </student>
   <student>
-    <author sex="H" codeApogee="12" registrationYear="2024">
+    <author sex="F" codeApogee="12" registrationYear="2024">
+      <firstname>AKONDRO</firstname>
+      <lastname>Manta</lastname>
+      <birth>2006-05-12</birth>
+    </author>
+    <title>AKONDRO MANTA OH</title>
+    <abstract>TSY MISY</abstract>
+    <keywords>AKONDRO</keywords>
+    <disciplines>G&#xE9;nie Environnemental</disciplines>
+    <speciality>G&#xE9;nomique et Bioinformatique</speciality>
+    <theme>Agriculture Durable</theme>
+    <institution>FSR</institution>
+    <structure type="group">XRCTFVYGBHNJ</structure>
+    <mail>
+      <mail type="institutionnel">a12@gmail.com</mail>
+      <mail type="autre">a12@gmail.com</mail>
+    </mail>
+    <phone>0612</phone>
+    <address>
+      <ville>a12</ville>
+    </address>
+    <supervisor>
+      <firstname>A</firstname>
+      <lastname>A</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>FSR</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>B</firstname>
+      <lastname>B</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>FSR</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="H" codeApogee="4956212" registrationYear="2024">
       <firstname>AKONDRO</firstname>
       <lastname>Manta</lastname>
       <birth>2007-05-04</birth>
@@ -4695,41 +4730,6 @@
       <lastname>A</lastname>
       <mail>a12@gmail.com</mail>
       <institution>FSR</institution>
-    </cosupervisor>
-  </student>
-  <student>
-    <author sex="F" codeApogee="12" registrationYear="2024">
-      <firstname>AKONDRO</firstname>
-      <lastname>Manta</lastname>
-      <birth>2001-11-11</birth>
-    </author>
-    <title>LATSAKA</title>
-    <abstract>A</abstract>
-    <keywords>A</keywords>
-    <disciplines>Physique</disciplines>
-    <speciality>Intelligence Artificielle</speciality>
-    <theme>Physique des Particules</theme>
-    <institution>FSR</institution>
-    <structure type="group">A</structure>
-    <mail>
-      <mail type="institutionnel">a12@gmail.com</mail>
-      <mail type="autre">a12@gmail.com</mail>
-    </mail>
-    <phone>0612</phone>
-    <address>
-      <ville>a12</ville>
-    </address>
-    <supervisor>
-      <firstname>X</firstname>
-      <lastname>X</lastname>
-      <mail>a12@gmail.com</mail>
-      <institution>ENCG</institution>
-    </supervisor>
-    <cosupervisor>
-      <firstname>Y</firstname>
-      <lastname>Y</lastname>
-      <mail>a12@gmail.com</mail>
-      <institution>ENSAM</institution>
     </cosupervisor>
   </student>
 </submission>
