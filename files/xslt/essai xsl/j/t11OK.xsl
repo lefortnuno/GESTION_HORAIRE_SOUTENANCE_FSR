@@ -1,7 +1,6 @@
 <!-- 9 etudiants par jour ET depuis de soutenance a 9 heure BIEN respecter 
 DE PLUS les etudiants passe par ordre Alphabetique
-ET ils sont regroupEes par disciplines avec parallelisme des soutenances
-L'HORAIRE est maintenant en forma Debut-Fin -->
+ET ils sont regroupEes par disciplines avec parallelisme des soutenances -->
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -43,14 +42,12 @@ L'HORAIRE est maintenant en forma Debut-Fin -->
     <xsl:variable name="minuteDebut" select="(($index - 1) mod $soutenanceParJour) * $dureeSoutenance"/>
     <xsl:variable name="heureDebut" select="9 + floor($minuteDebut div 60)"/>
     <xsl:variable name="minuteDebutAffiche" select="$minuteDebut mod 60"/>
-    <xsl:variable name="heureFin" select="9 + floor(($minuteDebut + $dureeSoutenance) div 60)"/>
-    <xsl:variable name="minuteFin" select="($minuteDebut + $dureeSoutenance) mod 60"/>
     <tr>
       <td><xsl:value-of select="author/@codeApogee"/></td>
       <td><xsl:value-of select="concat(author/firstname, ' ', author/lastname)"/></td>
       <td><xsl:value-of select="theme"/></td>
       <td><xsl:value-of select="concat(format-number($jour, '00'), '/03/2024')"/></td>
-      <td><xsl:value-of select="concat(format-number($heureDebut, '00'), ':', format-number($minuteDebutAffiche, '00'))"/> - <xsl:value-of select="concat(format-number($heureFin, '00'), ':', format-number($minuteFin, '00'))"/></td>
+      <td><xsl:value-of select="concat(format-number($heureDebut, '00'), ':', format-number($minuteDebutAffiche, '00'))"/></td>
     </tr>
   </xsl:template>
 

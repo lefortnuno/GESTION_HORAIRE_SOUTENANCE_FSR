@@ -1,7 +1,7 @@
 <?php
 require 'config/config.php';
 
-if (!empty ($_SESSION["codeApogee"])) {
+if (!empty($_SESSION["codeApogee"])) {
     $codeApogee = $_SESSION["codeApogee"];
     $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = $codeApogee");
     $row = mysqli_fetch_assoc($result);
@@ -43,7 +43,7 @@ if (!empty ($_SESSION["codeApogee"])) {
                 <!-- Mes message d'alert et de notification -->
                 <?php
                 // session_start();
-                if (isset ($_SESSION['message'])) {
+                if (isset($_SESSION['message'])) {
                     ?>
                     <div class="alert alert-success text-center" style="margin-top:20px;">
                         <?php echo $_SESSION['message']; ?>
@@ -53,7 +53,7 @@ if (!empty ($_SESSION["codeApogee"])) {
                     unset($_SESSION['message']);
                 }
 
-                if (isset ($_SESSION['errorMessage'])) {
+                if (isset($_SESSION['errorMessage'])) {
                     ?>
                     <div class="alert alert-danger text-center" style="margin-top:20px;">
                         <?php echo $_SESSION['errorMessage']; ?>
@@ -117,6 +117,13 @@ if (!empty ($_SESSION["codeApogee"])) {
                     </tbody>
 
                 </table>
+
+                <div class="old text-right">
+                    <a style="text-decoration: none; color: #000;"
+                        href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/result/index.html"> PDF
+                        (ancien)</a>
+                </div>
+
             </div>
         </div>
     </div>

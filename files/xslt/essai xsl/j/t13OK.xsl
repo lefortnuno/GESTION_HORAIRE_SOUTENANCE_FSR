@@ -1,13 +1,12 @@
-<!-- 9 etudiants par jour ET depuis de soutenance a 9 heure BIEN respecter 
-DE PLUS les etudiants passe par ordre Alphabetique
-ET ils sont regroupEes par disciplines avec parallelisme des soutenances
-L'HORAIRE est maintenant en forma Debut-Fin -->
+<!-- t12OK.xsl + PAUSE de 20min tout les 3 etudiants passe
+ET Affichage du temps de pause + reprise a 9h le lendemain -->
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Paramètres -->
   <xsl:param name="soutenanceParJour" select="9"/>
   <xsl:param name="dureeSoutenance" select="20"/>
+  <xsl:param name="pauseDuration" select="20"/>
 
   <!-- Template de correspondance pour l'élément racine -->
   <xsl:template match="/">
@@ -52,6 +51,12 @@ L'HORAIRE est maintenant en forma Debut-Fin -->
       <td><xsl:value-of select="concat(format-number($jour, '00'), '/03/2024')"/></td>
       <td><xsl:value-of select="concat(format-number($heureDebut, '00'), ':', format-number($minuteDebutAffiche, '00'))"/> - <xsl:value-of select="concat(format-number($heureFin, '00'), ':', format-number($minuteFin, '00'))"/></td>
     </tr>
+    <!-- Ajout de la pause après chaque série de 3 soutenances -->
+    <xsl:if test="$index mod 3 = 0">
+      <tr>
+        <td colspan="5" style="text-align:center; background-color: lightgray;">Pause de <xsl:value-of select="$pauseDuration"/> minutes</td>
+      </tr>
+    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>

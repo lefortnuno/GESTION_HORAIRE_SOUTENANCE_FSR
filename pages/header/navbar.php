@@ -17,9 +17,10 @@
                 </a></li>
             <?php
         } ?>
-        <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/pages/etudiant/planning.php">Planning</a>
-        <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/pages/xsltPage/planning.php">P.XSLT</a>
-        </li>
+
+        <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/result/planning.php">Planning</a></li>
+        <!-- <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/pages/etudiant/planning.php">P.Online</a>
+        </li> -->
         <li><a href="#projects"> </a></li>
         <li><a href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/auth/logout.php">Déconnexion</a></li>
     </ul>
