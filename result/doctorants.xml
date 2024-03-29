@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- <!DOCTYPE submission SYSTEM "../DTD/rules.dtd"> -->
+<!-- <!DOCTYPE submission SYSTEM "../files/DTD/rules.dtd"> -->
 <submission>
   <student>
     <author sex="H" codeApogee="23131043" registrationYear="2024">
@@ -115,7 +115,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -395,7 +395,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -465,7 +465,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -921,7 +921,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -1026,7 +1026,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -1202,7 +1202,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -1482,7 +1482,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -1552,7 +1552,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -2008,7 +2008,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -2113,7 +2113,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -2209,7 +2209,6 @@
       <institution>E</institution>
     </cosupervisor>
   </student>
-
   <student>
     <author sex="H" codeApogee="23131043" registrationYear="2024">
       <firstname>AAA</firstname>
@@ -2324,7 +2323,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -2604,7 +2603,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -2674,7 +2673,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -3130,7 +3129,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -3235,7 +3234,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -3411,7 +3410,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -3691,7 +3690,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T6</theme>
     <institution>A</institution>
@@ -3761,7 +3760,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T5</theme>
     <institution>A</institution>
@@ -4217,7 +4216,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T1</theme>
     <institution>A</institution>
@@ -4322,7 +4321,7 @@
     <title>AAA</title>
     <abstract>A</abstract>
     <keywords>A</keywords>
-    <disciplines>Geo</disciplines>
+    <disciplines>G&#xE9;o</disciplines>
     <speciality>A</speciality>
     <theme>T4</theme>
     <institution>A</institution>
@@ -4416,6 +4415,76 @@
       <lastname>A</lastname>
       <mail>a@gmail.com</mail>
       <institution>E</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="F" codeApogee="12" registrationYear="2024">
+      <firstname>a12</firstname>
+      <lastname>a12</lastname>
+      <birth>2012-12-12</birth>
+    </author>
+    <title>A12</title>
+    <abstract>A12 a</abstract>
+    <keywords>A12</keywords>
+    <disciplines>G&#xE9;o</disciplines>
+    <speciality>A12</speciality>
+    <theme>T1</theme>
+    <institution>A</institution>
+    <structure type="group">A12</structure>
+    <mail>
+      <mail type="institutionnel">a12@gmail.com</mail>
+      <mail type="autre">a12@gmail.com</mail>
+    </mail>
+    <phone>0612</phone>
+    <address>
+      <ville>a12</ville>
+    </address>
+    <supervisor>
+      <firstname>A12</firstname>
+      <lastname>A12</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>A</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>A12</firstname>
+      <lastname>A12</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>A</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="F" codeApogee="12" registrationYear="2024">
+      <firstname>AAAA</firstname>
+      <lastname>AAAA</lastname>
+      <birth>2012-12-12</birth>
+    </author>
+    <title>A12</title>
+    <abstract>A12</abstract>
+    <keywords>A12</keywords>
+    <disciplines>Physique</disciplines>
+    <speciality>A12</speciality>
+    <theme>T3</theme>
+    <institution>A</institution>
+    <structure type="group">A12</structure>
+    <mail>
+      <mail type="institutionnel">a12@gmail.com</mail>
+      <mail type="autre">a12@gmail.com</mail>
+    </mail>
+    <phone>0612</phone>
+    <address>
+      <ville>a12</ville>
+    </address>
+    <supervisor>
+      <firstname>A12</firstname>
+      <lastname>A12</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>A</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>A12</firstname>
+      <lastname>A12</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>A</institution>
     </cosupervisor>
   </student>
 </submission>

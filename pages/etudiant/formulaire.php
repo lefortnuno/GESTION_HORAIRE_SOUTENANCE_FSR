@@ -1,7 +1,7 @@
 <?php
 require '../../config/config.php';
 
-if (!empty ($_SESSION["codeApogee"])) {
+if (!empty($_SESSION["codeApogee"])) {
     $codeApogee = $_SESSION["codeApogee"];
     $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = $codeApogee");
     $row = mysqli_fetch_assoc($result);
@@ -37,7 +37,7 @@ if (!empty ($_SESSION["codeApogee"])) {
                 <!-- Mes message d'alert et de notification -->
                 <?php
                 // session_start();
-                if (isset ($_SESSION['message'])) {
+                if (isset($_SESSION['message'])) {
                     ?>
                     <div class="alert alert-success text-cEntrez votre" style="margin-top:20px;">
                         <?php echo $_SESSION['message']; ?>
@@ -47,7 +47,7 @@ if (!empty ($_SESSION["codeApogee"])) {
                     unset($_SESSION['message']);
                 }
 
-                if (isset ($_SESSION['errorMessage'])) {
+                if (isset($_SESSION['errorMessage'])) {
                     ?>
                     <div class="alert alert-danger text-cEntrez votre" style="margin-top:20px;">
                         <?php echo $_SESSION['errorMessage']; ?>
@@ -106,13 +106,13 @@ if (!empty ($_SESSION["codeApogee"])) {
                                     <div class="input-field">
                                         <label>Téléphone </label>
                                         <input required type="number" placeholder="Entrez votre numéro de téléphone"
-                                            name="numTel" id="numTel" value="">
+                                            name="numTel" id="numTel" value="<?php echo $row['numTel']; ?>">
                                     </div>
 
                                     <div class="input-field">
                                         <label>Adresse </label>
                                         <input required type="text" placeholder="Entrez votre adresse" name="adresse"
-                                            id="adresse" value="">
+                                            id="adresse" value="<?php echo $row['adresse']; ?>">
                                     </div>
 
                                     <div class="input-field">

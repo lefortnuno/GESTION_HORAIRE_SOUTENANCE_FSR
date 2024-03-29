@@ -1,11 +1,11 @@
 <?php
 require "../config/config.php";
 
-if (!empty ($_SESSION["codeApogee"])) {
+if (!empty($_SESSION["codeApogee"])) {
     header("Location: ../index.php");
 }
 
-if (isset ($_POST["submit"])) {
+if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $mdp = $_POST["mdp"];
 
@@ -16,18 +16,14 @@ if (isset ($_POST["submit"])) {
         if ($mdp == $row["mdp"]) {
             $_SESSION["login"] = true;
             $_SESSION["codeApogee"] = $row["codeApogee"];
-
-            echo
-                "<script> alert('Connection reussi.'); </script>";
+            $_SESSION['message'] = 'Connection reussi.';
 
             header("Location: ../index.php");
         } else {
-            echo
-                "<script> alert('Mot de passe incorrect !'); </script>";
+            $_SESSION['errorMessage'] = 'Mot de passe incorrect !';
         }
     } else {
-        echo
-            "<script> alert('Ce compte n\\'existe pas !'); </script>";
+        $_SESSION['errorMessage'] = 'Ce compte n\'existe pas !';
     }
 }
 
@@ -61,8 +57,29 @@ if (isset ($_POST["submit"])) {
                     required />
                 <i class="bx bx-lock-alt"></i>
             </div>
-            <div class="input-field">
+            <div class="input-field text-center">
                 <input type="submit" name="submit" class="submit" value="S'authentifier" />
+                <?php
+                if (isset($_SESSION['message'])) {
+                    ?>
+                    <div style="margin-top:20px; color: green; text-align: center;">
+                        <?php echo $_SESSION['message']; ?>
+                    </div>
+                    <?php
+
+                    unset($_SESSION['message']);
+                }
+
+                if (isset($_SESSION['errorMessage'])) {
+                    ?>
+                    <div style="margin-top:20px; color: red; text-align: center;">
+                        <?php echo $_SESSION['errorMessage']; ?>
+                    </div>
+                    <?php
+
+                    unset($_SESSION['errorMessage']);
+                }
+                ?>
             </div>
 
             <div class="bottom">

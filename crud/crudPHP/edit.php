@@ -1,7 +1,7 @@
 <?php
 // Inclure votre fichier de connexion à la base de données
 require_once '../../config/config.php';
-if (isset ($_POST['edit'])) {
+if (isset($_POST['edit'])) {
     // Récupérez l'ID de la session
     $codeApogee = $_SESSION["codeApogee"];
 
@@ -60,7 +60,7 @@ if (isset ($_POST['edit'])) {
     $_SESSION['message'] = 'Enregistrement réussi';
 
     // Charger les données existantes depuis le fichier XML
-    $submission = simplexml_load_file('../../files/xml/doctorants.xml');
+    $submission = simplexml_load_file('../../result/doctorants.xml');
 
     $student = $submission->addChild('student');
 
@@ -112,7 +112,7 @@ if (isset ($_POST['edit'])) {
     $dom->preserveWhiteSpace = false;
     $dom->formatOutput = true;
     $dom->loadXML($submission->asXML());
-    $dom->save('../../files/xml/doctorants.xml');
+    $dom->save('../../result/doctorants.xml');
 
     header('location: ../../index.php');
     exit();

@@ -6,7 +6,7 @@ if (!empty($_SESSION["codeApogee"])) {
     $result = mysqli_query($conn, "SELECT * FROM tb_user WHERE codeApogee = $codeApogee");
     $row = mysqli_fetch_assoc($result);
 } else {
-    header("Location: auth/login.php");
+    header("Location: auth/codeApogee.php");
 }
 ?>
 
@@ -33,16 +33,13 @@ if (!empty($_SESSION["codeApogee"])) {
     ?>
 
     <div class="container">
-        <h1 class="page-header text-center custom-h1">Découvrez la liste des doctorants
-            inscrits</h1>
+        <h3 class="page-header text-center custom-h3">
+            Vos informations s'afficheront ici lorsque vous serez inscrit !
+        </h3>
         <div class="row">
             <div class="col-sm-11 col-sm-offset-1">
-                <!-- <a href="#addnew" class="btn btn-primary" data-toggle="modal"><span
-                        class="glyphicon glyphicon-plus"></span> Nouveau </a> -->
 
-                <!-- Mes message d'alert et de notification -->
                 <?php
-                // session_start();
                 if (isset($_SESSION['message'])) {
                     ?>
                     <div class="alert alert-success text-center" style="margin-top:20px;">
@@ -70,12 +67,13 @@ if (!empty($_SESSION["codeApogee"])) {
                         <th>Nom & Prénom</th>
                         <th>Thème</th>
                         <th>Téléphone</th>
-                        <!-- <th> </th> -->
+                        <th>Date</th>
+                        <th>Horaire</th>
                     </thead>
                     <tbody>
                         <?php
                         // Chargement du fichier XML
-                        $file = simplexml_load_file('files/xml/doctorants.xml');
+                        $file = simplexml_load_file('result/doctorants.xml');
 
                         $found = false; // Indicateur pour savoir si le code Apogée a été trouvé
                         
@@ -96,8 +94,12 @@ if (!empty($_SESSION["codeApogee"])) {
                                     <td>
                                         <?php echo $row->phone; ?>
                                     </td>
-                                    <!-- Ajoutez ici les modalités d'édition et de suppression -->
-                                    <?php include ('modals/edit_delete_modal.php'); ?>
+                                    <td>
+                                        <?php echo $row->theme; ?>
+                                    </td>
+                                    <td>
+                                        <?php echo $row->phone; ?>
+                                    </td>
                                 </tr>
                                 <?php
                             }
@@ -120,15 +122,14 @@ if (!empty($_SESSION["codeApogee"])) {
 
                 <div class="old text-right">
                     <a style="text-decoration: none; color: #000;"
-                        href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/result/index.html"> PDF
+                        href="http://localhost/PROJET/GESTION_HORAIRE_SOUTENANCE_FSR/result/index.html" target="_blank">
+                        PDF
                         (ancien)</a>
                 </div>
 
             </div>
         </div>
     </div>
-
-    <?php include ('modals/add_modal.php'); ?>
 
     <script src=" files/js/jquery.min.js">
     </script>

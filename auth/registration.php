@@ -1,11 +1,11 @@
 <?php
 require '../config/config.php';
 
-if (!empty ($_SESSION["codeApogee"])) {
+if (!empty($_SESSION["codeApogee"])) {
     header("Location: ../index.php");
 }
 
-if (isset ($_POST["submit"])) {
+if (isset($_POST["submit"])) {
     $codeApogee = $_POST["codeApogee"];
     $email = $_POST["email"];
     $nom = $_POST["nom"];
@@ -17,19 +17,15 @@ if (isset ($_POST["submit"])) {
 
     $dupliquer = mysqli_query($conn, "SELECT * FROM tb_user WHERE email = '$email' OR codeApogee = '$codeApogee';");
     if (mysqli_num_rows($dupliquer) > 0) {
-        echo
-            "<script> alert('Code Apogée et/ou Email existant !'); </script>";
+        $_SESSION['errorMessage'] = 'Code Apogée et/ou Email existant !';
     } else {
         if ($mdp == $cmdp) {
-            $query = "INSERT INTO tb_user(codeApogee, email, nom, prenom, numTel, adresse, mdp) VALUES('$codeApogee','$email', '$nom', '$prenom', '$numTel', '$adresse', '$mdp')";
-            mysqli_query($conn, $query);
-            echo
-                "<script> alert('Enregistrement reussi.'); </script>";
+            $query = "INSERT INTO `tb_user` (`codeApogee`, `nom`, `prenom`, `adresse`,`numtel`, `email`, `mdp`, `conf`) VALUES ('$codeApogee', '$nom', '$prenom', '$adresse', '$numTel', '$email', '$mdp', '0')";
 
-            header("Location: login.php");
+            mysqli_query($conn, $query);
+            $_SESSION['message'] = 'Enregistrement reussi.';
         } else {
-            echo
-                "<script> alert('Les mot de passe ne correspondent pas !'); </script>";
+            $_SESSION['errorMessage'] = 'Les mot de passe ne correspondent pas !';
         }
     }
 }
@@ -48,6 +44,29 @@ if (isset ($_POST["submit"])) {
 
 <body>
     <div class="containerForm" style="margin-top: 0%;">
+
+        <?php
+        if (isset($_SESSION['message'])) {
+            ?>
+            <div class="alert alert-success text-center" style="margin-top:20px;">
+                <?php echo $_SESSION['message']; ?>
+            </div>
+            <?php
+
+            unset($_SESSION['message']);
+        }
+
+        if (isset($_SESSION['errorMessage'])) {
+            ?>
+            <div class="alert alert-danger text-center" style="margin-top:20px;">
+                <?php echo $_SESSION['errorMessage']; ?>
+            </div>
+            <?php
+
+            unset($_SESSION['errorMessage']);
+        }
+        ?>
+
         <header>S'enregistrer</header>
 
         <form action="" method="post" autocomplete="off">
@@ -107,7 +126,7 @@ if (isset ($_POST["submit"])) {
 
                 <div class="details family ">
                     <div class="buttons fieldsForButtons">
-                        <a class="backBtn btn btn-primary" href="login.php" class="btnText"
+                        <a class="backBtn btn btn-primary" href="codeApogee.php" class="btnText"
                             style="text-decoration: none; color:#fff;">
                             <i class="uil uil-navigator"></i>
                             <span>S'authentifier</span>
