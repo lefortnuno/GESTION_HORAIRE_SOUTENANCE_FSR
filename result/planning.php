@@ -6,6 +6,7 @@ if (!empty($_SESSION["codeApogee"])) {
     $contenu_bat = "cd C:\wamp64\www\PROJET\GESTION_HORAIRE_SOUTENANCE_FSR\\result \n";
     $contenu_bat .= "java -jar C:\SaxonHE12-4J\saxon-he-12.4.jar -s:doctorants.xml -xsl:transformation.xsl -o:index.html \n";
     $contenu_bat .= "wkhtmltopdf index.html programme.pdf \n";
+    $contenu_bat .= "programme.pdf \n";
     // $contenu_bat .= "pause \n";
 
     // Chemin du fichier .bat à générer

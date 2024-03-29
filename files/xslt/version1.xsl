@@ -1,8 +1,12 @@
+<!-- LOGIQ = NB ETUDIANTS PREDEFINI A 12/JOUR -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <!-- Paramètres -->
+  <xsl:param name="soutenanceParJour" select="12"/> <!-- Nombre d'étudiants à soutenir par jour -->
   <xsl:param name="dureeSoutenance" select="20"/> <!-- Durée de chaque soutenance en minutes -->
+  <xsl:param name="pauseDuration" select="20"/> <!-- Durée de la pause entre chaque série de soutenances -->
 
   <!-- Template de correspondance pour l'élément racine -->
   <xsl:template match="/">
@@ -59,8 +63,8 @@
               <th>Code Apogée</th>
               <th>Nom et Prénom</th>
               <th>Thème</th>
-              <th>Date</th>
-              <th>Horaire</th>
+              <th>Date de soutenance</th>
+              <th>Horaire de soutenance</th>
             </tr>
             <!-- Appliquer le template pour chaque étudiant du groupe, trié par nom -->
             <xsl:apply-templates select="current-group()">
@@ -77,46 +81,34 @@
     <!-- Calcul de l'index de l'étudiant dans la liste totale -->
     <xsl:variable name="index" select="position()"/>
     <!-- Calcul du numéro de jour de la soutenance -->
-    <xsl:variable name="jour" select="ceiling($index div 12)"/>
-    <!-- Liste des heures de soutenance prédéfinies -->
-    <xsl:variable name="hours">
-      <hour>9:00 - 9:20</hour>
-      <hour>9:20 - 9:40</hour>
-      <hour>9:40 - 10:00</hour>
-      <hour>10:30 - 10:50</hour>
-      <hour>10:50 - 11:10</hour>
-      <hour>11:10 - 11:30</hour>
-      <hour>14:00 - 14:20</hour>
-      <hour>14:20 - 14:40</hour>
-      <hour>14:40 - 15:00</hour>
-      <hour>15:30 - 15:50</hour>
-      <hour>15:50 - 16:10</hour>
-      <hour>16:10 - 16:30</hour>
-    </xsl:variable>
-    <!-- Sélection de l'heure de soutenance en fonction de l'index -->
-    <xsl:variable name="hourIndex" select="($index - 1) mod 12"/>
-    <!-- Affichage des informations de l'étudiant avec l'heure de soutenance -->
+    <xsl:variable name="jour" select="ceiling($index div $soutenanceParJour)"/>
+    <!-- Calcul de l'heure de début de la soutenance -->
+    <xsl:variable name="minuteDebut" select="(($index - 1) mod $soutenanceParJour) * $dureeSoutenance"/>
+    <xsl:variable name="heureDebut" select="if ($index mod $soutenanceParJour &gt; 6) then 12 else 9"/>
+    <xsl:variable name="heureDebut" select="$heureDebut + floor($minuteDebut div 60)"/>
+    <xsl:variable name="minuteDebutAffiche" select="$minuteDebut mod 60"/>
+    <!-- Calcul de l'heure de fin de la soutenance -->
+    <xsl:variable name="heureFin" select="if ($index mod $soutenanceParJour &gt; 6) then 12 else 9"/>
+    <xsl:variable name="heureFin" select="$heureFin + floor(($minuteDebut + $dureeSoutenance) div 60)"/>
+    <xsl:variable name="minuteFin" select="($minuteDebut + $dureeSoutenance) mod 60"/>
+    <!-- Affichage des informations de l'étudiant avec les heures de début et de fin -->
     <tr>
       <td><xsl:value-of select="author/@codeApogee"/></td>
       <td><xsl:value-of select="concat(author/firstname, ' ', author/lastname)"/></td>
       <td><xsl:value-of select="theme"/></td>
       <td><xsl:value-of select="concat(format-number($jour, '00'), '/03/2024')"/></td>
-      <td><xsl:value-of select="$hours/hour[$hourIndex + 1]"/></td>
+      <td><xsl:value-of select="concat(format-number($heureDebut, '00'), ':', format-number($minuteDebutAffiche, '00'))"/> - <xsl:value-of select="concat(format-number($heureFin, '00'), ':', format-number($minuteFin, '00'))"/></td>
     </tr>
-    <!-- Ajout de la pause après chaque série de 3 étudiants -->
-    <xsl:if test="$index mod 3 = 0 and $index mod 12 != 0">
+    <!-- Ajout de la pause après chaque série de 3 soutenances -->
+    <xsl:if test="$index mod 3 = 0">
       <tr>
-        <td colspan="5" style="text-align:center; background-color: lightgray; visibility: hidden;">Pause</td>
-      </tr>
-    </xsl:if>
-    <!-- Ajout de la pause déjeuner après chaque série de 6 étudiants -->
-    <xsl:if test="$index mod 6 = 0 and $index mod 12 != 0">
-      <tr>
-        <td colspan="5" style="text-align:center; background-color: lightgray;">Pause Déjeuner</td>
+        <td colspan="5" style="text-align:center; background-color: lightgray; visibility: hidden;">
+        Pause de <xsl:value-of select="$pauseDuration"/> minutes
+        </td>
       </tr>
     </xsl:if>
     <!-- Affichage de "Fin de journée" à la fin de chaque journée de soutenance -->
-    <xsl:if test="$index mod 12 = 0">
+    <xsl:if test="$index mod $soutenanceParJour = 0">
       <tr>
         <td colspan="5" style="text-align:center; background-color: lightgray;">Fin de journée</td>
       </tr>

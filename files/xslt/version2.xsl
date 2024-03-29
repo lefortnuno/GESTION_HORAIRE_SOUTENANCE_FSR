@@ -1,3 +1,5 @@
+<!-- LOGIQ = HEURE PLACER ET PREDEFINI  -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -59,8 +61,8 @@
               <th>Code Apogée</th>
               <th>Nom et Prénom</th>
               <th>Thème</th>
-              <th>Date</th>
-              <th>Horaire</th>
+              <th>Date de soutenance</th>
+              <th>Horaire de soutenance</th>
             </tr>
             <!-- Appliquer le template pour chaque étudiant du groupe, trié par nom -->
             <xsl:apply-templates select="current-group()">
@@ -103,24 +105,6 @@
       <td><xsl:value-of select="concat(format-number($jour, '00'), '/03/2024')"/></td>
       <td><xsl:value-of select="$hours/hour[$hourIndex + 1]"/></td>
     </tr>
-    <!-- Ajout de la pause après chaque série de 3 étudiants -->
-    <xsl:if test="$index mod 3 = 0 and $index mod 12 != 0">
-      <tr>
-        <td colspan="5" style="text-align:center; background-color: lightgray; visibility: hidden;">Pause</td>
-      </tr>
-    </xsl:if>
-    <!-- Ajout de la pause déjeuner après chaque série de 6 étudiants -->
-    <xsl:if test="$index mod 6 = 0 and $index mod 12 != 0">
-      <tr>
-        <td colspan="5" style="text-align:center; background-color: lightgray;">Pause Déjeuner</td>
-      </tr>
-    </xsl:if>
-    <!-- Affichage de "Fin de journée" à la fin de chaque journée de soutenance -->
-    <xsl:if test="$index mod 12 = 0">
-      <tr>
-        <td colspan="5" style="text-align:center; background-color: lightgray;">Fin de journée</td>
-      </tr>
-    </xsl:if>
   </xsl:template>
 
 </xsl:stylesheet>

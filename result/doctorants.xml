@@ -4627,4 +4627,109 @@
       <institution>E</institution>
     </cosupervisor>
   </student>
+  <student>
+    <author sex="F" codeApogee="12" registrationYear="2024">
+      <firstname>AKONDRO</firstname>
+      <lastname>Manta</lastname>
+      <birth>2006-05-12</birth>
+    </author>
+    <title>AKONDRO MANTA OH</title>
+    <abstract>TSY MISY</abstract>
+    <keywords>AKONDRO</keywords>
+    <disciplines>Biologie</disciplines>
+    <speciality>G&#xE9;nomique et Bioinformatique</speciality>
+    <theme/>
+    <institution>FSR</institution>
+    <structure type="group">XRCTFVYGBHNJ</structure>
+    <mail>
+      <mail type="institutionnel">a12@gmail.com</mail>
+      <mail type="autre">a12@gmail.com</mail>
+    </mail>
+    <phone>0612</phone>
+    <address>
+      <ville>a12</ville>
+    </address>
+    <supervisor>
+      <firstname>A</firstname>
+      <lastname>A</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>FSR</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>B</firstname>
+      <lastname>B</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>FSR</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="H" codeApogee="12" registrationYear="2024">
+      <firstname>AKONDRO</firstname>
+      <lastname>Manta</lastname>
+      <birth>2007-05-04</birth>
+    </author>
+    <title>A</title>
+    <abstract>A</abstract>
+    <keywords>A</keywords>
+    <disciplines>Astronomie</disciplines>
+    <speciality>Biodiversit&#xE9;, Environnement et D&#xE9;veloppement Durable</speciality>
+    <theme>Analyse Num&#xE9;rique</theme>
+    <institution>FSR</institution>
+    <structure type="group">A</structure>
+    <mail>
+      <mail type="institutionnel">a12@gmail.com</mail>
+      <mail type="autre">a12@gmail.com</mail>
+    </mail>
+    <phone>0612</phone>
+    <address>
+      <ville>a12</ville>
+    </address>
+    <supervisor>
+      <firstname>A</firstname>
+      <lastname>A</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>FSR</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>A</firstname>
+      <lastname>A</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>FSR</institution>
+    </cosupervisor>
+  </student>
+  <student>
+    <author sex="F" codeApogee="12" registrationYear="2024">
+      <firstname>AKONDRO</firstname>
+      <lastname>Manta</lastname>
+      <birth>2001-11-11</birth>
+    </author>
+    <title>LATSAKA</title>
+    <abstract>A</abstract>
+    <keywords>A</keywords>
+    <disciplines>Physique</disciplines>
+    <speciality>Intelligence Artificielle</speciality>
+    <theme>Physique des Particules</theme>
+    <institution>FSR</institution>
+    <structure type="group">A</structure>
+    <mail>
+      <mail type="institutionnel">a12@gmail.com</mail>
+      <mail type="autre">a12@gmail.com</mail>
+    </mail>
+    <phone>0612</phone>
+    <address>
+      <ville>a12</ville>
+    </address>
+    <supervisor>
+      <firstname>X</firstname>
+      <lastname>X</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>ENCG</institution>
+    </supervisor>
+    <cosupervisor>
+      <firstname>Y</firstname>
+      <lastname>Y</lastname>
+      <mail>a12@gmail.com</mail>
+      <institution>ENSAM</institution>
+    </cosupervisor>
+  </student>
 </submission>

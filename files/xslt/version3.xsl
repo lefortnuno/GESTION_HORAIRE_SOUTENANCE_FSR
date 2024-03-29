@@ -1,3 +1,5 @@
+<!-- LOGIQ = HEURE PLACER ET PREDEFINI + AUJOUT DE MARQUE DE PAUSE -->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
@@ -59,8 +61,8 @@
               <th>Code Apogée</th>
               <th>Nom et Prénom</th>
               <th>Thème</th>
-              <th>Date</th>
-              <th>Horaire</th>
+              <th>Date de soutenance</th>
+              <th>Horaire de soutenance</th>
             </tr>
             <!-- Appliquer le template pour chaque étudiant du groupe, trié par nom -->
             <xsl:apply-templates select="current-group()">

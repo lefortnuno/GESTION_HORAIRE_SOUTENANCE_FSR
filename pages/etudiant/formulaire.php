@@ -131,13 +131,36 @@ if (!empty($_SESSION["codeApogee"])) {
 
                                     <div class="input-field">
                                         <label>Thème </label>
-                                        <select name="theme" id="theme" value="">
-                                            <option disabled selected>Choix du Théme</option>
-                                            <option>T1</option>
-                                            <option>T2</option>
-                                            <option>T3</option>
-                                            <option>T4</option>
-                                            <option>T5</option>
+                                        <select name="theme" id="theme" value="" required>
+                                            <option disabled selected>Choisir un domaine de recherche</option>
+                                            <optgroup label="Sciences de la Vie">
+                                                <option value="Biotechnologie Végétale">Biotechnologie Végétale</option>
+                                                <option value="Génie Génétique">Génie Génétique</option>
+                                            </optgroup>
+                                            <optgroup label="Sciences de la Terre">
+                                                <option value="Géologie Marine">Géologie Marine</option>
+                                                <option value="Géophysique">Géophysique</option>
+                                            </optgroup>
+                                            <optgroup label="Sciences de l'Environnement">
+                                                <option value="Agriculture Durable">Agriculture Durable</option>
+                                                <option value="Écologie Industrielle">Écologie Industrielle</option>
+                                            </optgroup>
+                                            <optgroup label="Sciences de l'Espace">
+                                                <option value="Astrophysique">Astrophysique</option>
+                                            </optgroup>
+                                            <optgroup label="Sciences de l'Informatique">
+                                                <option value="Intelligence Artificielle">Intelligence Artificielle
+                                                </option>
+                                                <option value="Sécurité Informatique">Sécurité Informatique</option>
+                                            </optgroup>
+                                            <optgroup label="Sciences Mathématiques">
+                                                <option value="Analyse Numérique">Analyse Numérique</option>
+                                                <option value="Théorie des Graphes">Théorie des Graphes</option>
+                                            </optgroup>
+                                            <optgroup label="Sciences Physiques">
+                                                <option value="Physique des Particules">Physique des Particules</option>
+                                                <option value="Électronique Quantique">Électronique Quantique</option>
+                                            </optgroup>
                                         </select>
                                     </div>
 
@@ -157,30 +180,101 @@ if (!empty($_SESSION["codeApogee"])) {
                                         <label>Disciplines </label>
                                         <select name="disciplines" id="disciplines" value="">
                                             <option disabled selected>Choix de la discipline</option>
-                                            <option>Math</option>
-                                            <option>Info</option>
-                                            <option>Bio</option>
-                                            <option>Géo</option>
-                                            <option>Chime</option>
-                                            <option>Physique</option>
+                                            <option value="Agroalimentaire">Agroalimentaire</option>
+                                            <option value="Astronomie">Astronomie</option>
+                                            <option value="Biologie">Biologie</option>
+                                            <option value="Chimie">Chimie</option>
+                                            <option value="Électronique">Électronique</option>
+                                            <option value="Géologie">Géologie</option>
+                                            <option value="Génie Environnemental">Génie Environnemental</option>
+                                            <option value="Informatique">Informatique</option>
+                                            <option value="Mathématiques">Mathématiques</option>
+                                            <option value="Physique">Physique</option>
+                                            <option value="Pharmacologie">Pharmacologie</option>
                                         </select>
                                     </div>
 
                                     <div class="input-field">
                                         <label>Specialité </label>
-                                        <input required type="text" placeholder="Saisissez votre Specialité"
-                                            name="specialite" id="specialite" value="">
+                                        <select name="specialite" id="specialite" value="">
+                                            <option disabled selected>Choix de Spécialisation</option>
+                                            <optgroup label="Agroalimentaire">
+                                                <option value="Génie Agricole">Génie Agricole</option>
+                                                <option value="Agroécologie">Agroécologie</option>
+                                            </optgroup>
+                                            <optgroup label="Astronomie">
+                                                <option value="Astrophysique">Astrophysique</option>
+                                                <option value="Cosmologie">Cosmologie</option>
+                                            </optgroup>
+                                            <optgroup label="Biologie">
+                                                <option value="Biologie Moléculaire">Biologie Moléculaire</option>
+                                                <option value="Biologie Cellulaire">Biologie Cellulaire</option>
+                                            </optgroup>
+                                            <optgroup label="Chimie">
+                                                <option value="Chimie Organique">Chimie Organique</option>
+                                                <option value="Chimie Inorganique">Chimie Inorganique</option>
+                                            </optgroup>
+                                            <optgroup label="Électronique">
+                                                <option value="Microélectronique">Microélectronique</option>
+                                                <option value="Électronique de Puissance">Électronique de Puissance
+                                                </option>
+                                            </optgroup>
+                                            <optgroup label="Géologie">
+                                                <option value="Géologie Marine">Géologie Marine</option>
+                                                <option value="Géophysique">Géophysique</option>
+                                            </optgroup>
+                                            <optgroup label="Génie Environnemental">
+                                                <option value="Gestion de l'Eau">Gestion de l'Eau</option>
+                                                <option value="Énergie Renouvelable">Énergie Renouvelable</option>
+                                            </optgroup>
+                                            <optgroup label="Informatique">
+                                                <option value="Intelligence Artificielle">Intelligence Artificielle
+                                                </option>
+                                                <option value="Développement Web">Développement Web</option>
+                                                <option value="IAO OFFSHORING">IAO OFFSHORING</option>
+                                            </optgroup>
+                                            <optgroup label="Mathématiques">
+                                                <option value="Analyse Numérique">Analyse Numérique</option>
+                                                <option value="Probabilités et Statistiques">Probabilités et
+                                                    Statistiques</option>
+                                            </optgroup>
+                                            <optgroup label="Physique">
+                                                <option value="Physique Quantique">Physique Quantique</option>
+                                                <option value="Physique des Particules">Physique des Particules</option>
+                                            </optgroup>
+                                            <optgroup label="Pharmacologie">
+                                                <option value="Pharmacocinétique">Pharmacocinétique</option>
+                                                <option value="Pharmacogénétique">Pharmacogénétique</option>
+                                            </optgroup>
+
+                                        </select>
                                     </div>
 
                                     <div class="input-field">
                                         <label>Institution </label>
                                         <select name="institution" id="institution" value="">
                                             <option disabled selected>Choix de l'institution</option>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>C</option>
-                                            <option>D</option>
-                                            <option>E</option>
+                                            <option>FSR</option> <!-- Faculte des Sciense de Rabat -->
+                                            <option>UM5</option> <!-- Université Mohammed V de Rabat -->
+                                            <option>UIR</option> <!-- Université Internationale de Rabat -->
+                                            <option>UM6P</option> <!-- Université Mohammed VI Polytechnique -->
+                                            <option>UH1</option> <!-- Université Hassan Ier de Settat -->
+                                            <option>USMBA</option> <!-- Université Sidi Mohamed Ben Abdellah -->
+                                            <option>UCAM</option> <!-- Université Cadi Ayyad de Marrakech -->
+                                            <option>ENCG</option>
+                                            <!-- Ecole Nationale de Commerce et de Gestion -->
+                                            <option>ENSAM</option>
+                                            <!-- Ecole Nationale Supérieure d'Arts et Métiers -->
+                                            <option>ENSIAS</option>
+                                            <!-- Ecole Nationale Supérieure d'Informatique et d'Analyse des Systèmes -->
+                                            <option>INPT</option>
+                                            <!-- Institut National des Postes et Télécommunications -->
+                                            <option>INSEA</option>
+                                            <!-- Institut National de Statistique et d'Economie Appliquée -->
+                                            <option>ENS</option> <!-- Ecole Normale Supérieure -->
+                                            <option>ENSI</option>
+                                            <!-- Ecole Nationale des Sciences de l'Informatique -->
+                                            <option>ENCG</option> <!-- Ecole Nationale de Commerce et de Gestion -->
                                         </select>
                                     </div>
 
@@ -217,11 +311,27 @@ if (!empty($_SESSION["codeApogee"])) {
                                         <label>Institution </label>
                                         <select name="institutionSup" id="institutionSup" value="">
                                             <option disabled selected>Institution du superviseur</option>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>C</option>
-                                            <option>D</option>
-                                            <option>E</option>
+                                            <option>FSR</option> <!-- Faculte des Sciense de Rabat -->
+                                            <option>UM5</option> <!-- Université Mohammed V de Rabat -->
+                                            <option>UIR</option> <!-- Université Internationale de Rabat -->
+                                            <option>UM6P</option> <!-- Université Mohammed VI Polytechnique -->
+                                            <option>UH1</option> <!-- Université Hassan Ier de Settat -->
+                                            <option>USMBA</option> <!-- Université Sidi Mohamed Ben Abdellah -->
+                                            <option>UCAM</option> <!-- Université Cadi Ayyad de Marrakech -->
+                                            <option>ENCG</option>
+                                            <!-- Ecole Nationale de Commerce et de Gestion -->
+                                            <option>ENSAM</option>
+                                            <!-- Ecole Nationale Supérieure d'Arts et Métiers -->
+                                            <option>ENSIAS</option>
+                                            <!-- Ecole Nationale Supérieure d'Informatique et d'Analyse des Systèmes -->
+                                            <option>INPT</option>
+                                            <!-- Institut National des Postes et Télécommunications -->
+                                            <option>INSEA</option>
+                                            <!-- Institut National de Statistique et d'Economie Appliquée -->
+                                            <option>ENS</option> <!-- Ecole Normale Supérieure -->
+                                            <option>ENSI</option>
+                                            <!-- Ecole Nationale des Sciences de l'Informatique -->
+                                            <option>ENCG</option> <!-- Ecole Nationale de Commerce et de Gestion -->
                                         </select>
                                     </div>
                                 </div>
@@ -252,11 +362,27 @@ if (!empty($_SESSION["codeApogee"])) {
                                         <label>Institution </label>
                                         <select name="institutionCoSup" id="institutionCoSup" value="">
                                             <option disabled selected>Institutiondu co-superviseur</option>
-                                            <option>A</option>
-                                            <option>B</option>
-                                            <option>C</option>
-                                            <option>D</option>
-                                            <option>E</option>
+                                            <option>FSR</option> <!-- Faculte des Sciense de Rabat -->
+                                            <option>UM5</option> <!-- Université Mohammed V de Rabat -->
+                                            <option>UIR</option> <!-- Université Internationale de Rabat -->
+                                            <option>UM6P</option> <!-- Université Mohammed VI Polytechnique -->
+                                            <option>UH1</option> <!-- Université Hassan Ier de Settat -->
+                                            <option>USMBA</option> <!-- Université Sidi Mohamed Ben Abdellah -->
+                                            <option>UCAM</option> <!-- Université Cadi Ayyad de Marrakech -->
+                                            <option>ENCG</option>
+                                            <!-- Ecole Nationale de Commerce et de Gestion -->
+                                            <option>ENSAM</option>
+                                            <!-- Ecole Nationale Supérieure d'Arts et Métiers -->
+                                            <option>ENSIAS</option>
+                                            <!-- Ecole Nationale Supérieure d'Informatique et d'Analyse des Systèmes -->
+                                            <option>INPT</option>
+                                            <!-- Institut National des Postes et Télécommunications -->
+                                            <option>INSEA</option>
+                                            <!-- Institut National de Statistique et d'Economie Appliquée -->
+                                            <option>ENS</option> <!-- Ecole Normale Supérieure -->
+                                            <option>ENSI</option>
+                                            <!-- Ecole Nationale des Sciences de l'Informatique -->
+                                            <option>ENCG</option> <!-- Ecole Nationale de Commerce et de Gestion -->
                                         </select>
                                     </div>
                                 </div>
